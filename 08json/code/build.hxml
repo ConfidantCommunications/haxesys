@@ -5,7 +5,8 @@
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
 -cmd echo "  │ ├── lua"
--cmd haxe build_lua.hxml
+# -cmd haxe build_lua.hxml
+-cmd echo "  │ ├── ERROR: lua: main.lua:214: module 'hxsimdjson' not found:"
 -cmd echo "  │ ├── neko"
 -cmd haxe build_neko.hxml
 -cmd echo "  │ ├── cpp"
@@ -16,5 +17,8 @@
 -cmd haxe build_java.hxml
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
+-cmd echo "  │ ├── interp (Eval)"
+-cmd haxe build_interp.hxml
+
 
 -cmd echo "  └── Finished building targets"

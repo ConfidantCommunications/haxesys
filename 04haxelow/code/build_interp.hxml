@@ -1,0 +1,7 @@
+-lib haxelow
+-cp src
+--main Main
+# -debug
+-dce full
+-D analyzer-optimize
+--interp

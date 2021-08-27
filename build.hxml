@@ -63,7 +63,7 @@ build.hxml
 --next
 # doesn't work correctly, needs more love
 # build.hxml
--cmd echo "│ ├── 09socket/code"
+# -cmd echo "│ ├── 09socket/code"
 
 # markdown
 -cmd cd ../../

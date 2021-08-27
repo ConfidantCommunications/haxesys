@@ -22,5 +22,7 @@
 -cmd haxe build_java.hxml
 # -cmd echo "  │ ├── jvm"
 # -cmd haxe build_jvm.hxml
+-cmd echo "  │ ├── interp (Eval)"
+-cmd haxe build_interp.hxml
 
 -cmd echo "  └── Finished building targets"
