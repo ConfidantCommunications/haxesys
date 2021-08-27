@@ -58,11 +58,14 @@ Install the latest <a href="https://www.mono-project.com/download/stable/">Mono 
 <a name="lua">
 ## Lua
 
+source: https://haxe.org/manual/target-lua-getting-started.html
+
 I installed lua on osx with brew
 
 ```bash
 brew install lua
 brew install luarocks
+brew install cmake
 ```
 
 And use `luarocks` to install dependency :
@@ -72,6 +75,7 @@ luarocks install lrexlib-pcre
 luarocks install environ
 luarocks install luasocket
 luarocks install luv
+luarocks install luautf8
 ```
 
 _important to know which version you installed_
@@ -92,7 +96,6 @@ On Lua 5.3, install the bit32 library instead:
 
 ```
 luarocks install bit32
-luarocks install luautf8
 ```
 
 For Windows/Linux I would advice you follow the instructions:
