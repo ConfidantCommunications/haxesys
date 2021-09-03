@@ -6,15 +6,15 @@ The current targets that I have tested is
 
 - cpp (C++)
 - cs (C#)
-- node.js (without installing npm packages)
-- python
+- interp (Eval/Macro)
 - java
-- neko
 - lua
 - jvm
+- neko
+- node.js (without installing npm packages)
+- python
 
 But Haxe has more system targets, that probably work exactly the same:
 
-- macro
 - hl (hashlink)
 - php
