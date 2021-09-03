@@ -73,7 +73,9 @@ And have individual build files for the different targets:
 
 - build_cpp.hxml
 - build_cs.hxml
+- build_interp.hxml
 - build_java.hxml
+- build_jvm.hxml
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml

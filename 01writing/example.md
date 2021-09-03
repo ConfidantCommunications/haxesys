@@ -1,6 +1,5 @@
 # Writing example
 
-
 Simple write to a file. Can't make it more glamours.
 In this example we will use Haxe specific code that can be used for other `sys` targets (lua, python, neko, cpp, hl, php, java, cs) as well.
 
@@ -16,7 +15,6 @@ See example below:
 		- Main.hx
 	- build.hxml
 ```
-
 
 ## The Main.hx
 
@@ -40,7 +38,6 @@ class Main {
 
 ```
 
-
 ## The Haxe build file, build.hxml
 
 Normally you would have one `build.hxml` that would build everything you want to transpile to.
@@ -62,7 +59,9 @@ And have individual build files for the different targets:
 
 - build_cpp.hxml
 - build_cs.hxml
+- build_interp.hxml
 - build_java.hxml
+- build_jvm.hxml
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml
@@ -72,10 +71,7 @@ To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstr
 
 If a specific target doesn't work, I will explain it in this file
 
-
 Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/01writing/code)-folder.
-
-
 
 ## Build all targets with Haxe and start the specific target
 

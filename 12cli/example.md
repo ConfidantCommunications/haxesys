@@ -1,10 +1,6 @@
 # Example CLI
 
-
 Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/13terminal/code) for more comments.
-
-
-
 
 ## How to start
 
@@ -19,12 +15,9 @@ See example below:
 	- build.hxml
 ```
 
-
-
 ## The Main.hx
 
 This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/13terminal/code/src/Main.hx)
-
 
 But I want to show you how it works in this simple example:
 
@@ -46,6 +39,7 @@ class Main {
 	}
 }
 ```
+
 As you can see the static starting point of the class sends the `Sys.args` to the constructor.
 
 This way you can add vars to the CLI (I am using Neko as example):
@@ -90,7 +84,9 @@ And have individual build files for the different targets:
 
 - build_cpp.hxml
 - build_cs.hxml
+- build_interp.hxml
 - build_java.hxml
+- build_jvm.hxml
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml
@@ -100,10 +96,7 @@ To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstr
 
 If a specific target doesn't work, I will explain it in this file
 
-
 Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/13terminal/code)-folder.
-
-
 
 ## Build all targets with Haxe and start the specific target
 
@@ -113,4 +106,3 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `build_all.hxml`
 3. type `haxe build_all.hxml`
 4. press enter
-

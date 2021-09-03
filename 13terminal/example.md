@@ -1,10 +1,6 @@
 # Example CLI/command
 
-
 Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/13terminal/code) for more comments.
-
-
-
 
 ## How to start
 
@@ -19,8 +15,6 @@ See example below:
 	- build.hxml
 ```
 
-
-
 ## The Main.hx
 
 ```haxe
@@ -29,7 +23,6 @@ Sys.command('touch', ['readme.md']);
 ```
 
 Creates a file with the name "readme.md"
-
 
 ```haxe
 // print a message on the screen
@@ -47,7 +40,6 @@ if(out.indexOf('ffmpeg version') != -1){
 ```
 
 sort of trying to read if you have ffmpeg installed via `ffmpeg -version` asking the version of the installed programm
-
 
 ## The Haxe build file, build.hxml
 
@@ -70,7 +62,9 @@ And have individual build files for the different targets:
 
 - build_cpp.hxml
 - build_cs.hxml
+- build_interp.hxml
 - build_java.hxml
+- build_jvm.hxml
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml
@@ -80,10 +74,7 @@ To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstr
 
 If a specific target doesn't work, I will explain it in this file
 
-
 Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/13terminal/code)-folder.
-
-
 
 ## Build all targets with Haxe and start the specific target
 
@@ -93,6 +84,3 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `build_all.hxml`
 3. type `haxe build_all.hxml`
 4. press enter
-
-
-

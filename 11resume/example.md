@@ -12,12 +12,10 @@ And created a "empty" resume.json
 resume init
 ```
 
-
 Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code) for more comments.
 
 In this example we are going to read and use a `.json` file.
 We will convert the json to `.md`, `.txt` and some basic `.html`
-
 
 ## How to start
 
@@ -33,8 +31,6 @@ See example below:
 		- Main.hx
 	- build.hxml
 ```
-
-
 
 ## The Main.hx
 
@@ -85,8 +81,6 @@ typedef ResumeObjObj = {
 };
 ```
 
-
-
 ## The Haxe build file, build.hxml
 
 Normally you would have one `build.hxml` that would build everything you want to transpile to.
@@ -108,7 +102,9 @@ And have individual build files for the different targets:
 
 - build_cpp.hxml
 - build_cs.hxml
+- build_interp.hxml
 - build_java.hxml
+- build_jvm.hxml
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml
@@ -118,10 +114,7 @@ To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstr
 
 If a specific target doesn't work, I will explain it in this file
 
-
 Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code)-folder.
-
-
 
 ## Build all targets with Haxe and start the specific target
 
@@ -131,4 +124,3 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `build_all.hxml`
 3. type `haxe build_all.hxml`
 4. press enter
-
