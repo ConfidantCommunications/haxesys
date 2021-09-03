@@ -44,11 +44,9 @@ Source: <https://haxe.org/manual/target-cs-getting-started.html>
 <a name="cs">
 ## Download .NET development framework
 
-For osx:
+Not sure you need to do this
 
-```bash
-brew install mono
-```
+"C# compiler not found. Please make sure either Visual Studio or mono is installed or they are reachable by their path"
 
 - Get your version here: <https://dotnet.microsoft.com/>
 
@@ -56,6 +54,12 @@ Press that big "Get started"-button and you will get instructions how to proceed
 
 <a name="mono">
 ## Mono
+
+For osx:
+
+```bash
+brew install mono
+```
 
 Perhaps needs to be installed as well? Could be installed with Unity?
 
