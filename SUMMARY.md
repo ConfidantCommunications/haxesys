@@ -16,6 +16,7 @@ This is the summary of my book.
   - [How to](00helloworld/example.md)
 - [Example Writing](01writing/example.md)
 - [Example Reading](02reading/example.md)
+- [Example Reading](03append/example.md)
 - [Example Haxelow](04haxelow/about.md)
   - [How to](04haxelow/example.md)
 - [Example https api NASA](06nasa/about.md)
