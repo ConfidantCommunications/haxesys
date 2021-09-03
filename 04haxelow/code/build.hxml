@@ -8,8 +8,9 @@
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 
--cmd echo "  │ ├── python"
--cmd haxe build_python.hxml
+# // TypeError: can only concatenate str (not "float") to str
+# -cmd echo "  │ ├── python"
+# -cmd haxe build_python.hxml
 -cmd echo "  │ ├── lua"
 -cmd haxe build_lua.hxml
 -cmd echo "  │ ├── neko"
