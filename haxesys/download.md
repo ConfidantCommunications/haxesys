@@ -44,6 +44,12 @@ Source: <https://haxe.org/manual/target-cs-getting-started.html>
 <a name="cs">
 ## Download .NET development framework
 
+For osx:
+
+```bash
+brew install mono
+```
+
 - Get your version here: <https://dotnet.microsoft.com/>
 
 Press that big "Get started"-button and you will get instructions how to proceed on your platform.
