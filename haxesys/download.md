@@ -18,7 +18,7 @@ And a [code editor](#ide) will be useful!
 
 Current Haxe version is (at the time of writing):
 
-- **Haxe** v4.1.4
+- **Haxe** v4.2.3
 
 But if the version numbers changed, it means I haven't updated this part of the document in some time :D
 
