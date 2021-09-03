@@ -1,15 +1,12 @@
 # Example CLI - ProgressBar
 
-
 This is really silly, but a lot of fun to figure out.
 
 I wanted to have a progressBar in my cli, and you can for most languages.
 
-
 I say most, but not everything works like I would expect and I haven't fixed it for the languages.
 
 You want to know more about the languages that currently don't work (or don't work properly) check out the [`build_all.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/14cli_progress/code/build_all.hxml)
-
 
 For now node.js fails: ` Error: ENOTSUP: operation not supported on socket, fsync` which is weird... why do I need a socket (need to investigate)
 
@@ -17,13 +14,7 @@ Python works but the character use for fill has a strange effect so I replace it
 
 Lua works with a weird hack...
 
-
 Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/14cli_progress/code) for more comments.
-
-
-
-
-
 
 ## How to start
 
@@ -37,8 +28,6 @@ See example below:
 		- Main.hx
 	- build.hxml
 ```
-
-
 
 ## The Main.hx
 
@@ -83,9 +72,6 @@ To start showing this progessBar I use this code, which has not value besides sh
 
 ```
 
-
-
-
 ## The Haxe build file, build.hxml
 
 Normally you would have one `build.hxml` that would build everything you want to transpile to.
@@ -107,7 +93,9 @@ And have individual build files for the different targets:
 
 - build_cpp.hxml
 - build_cs.hxml
+- build_interp.hxml
 - build_java.hxml
+- build_jvm.hxml
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml
@@ -117,10 +105,7 @@ To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstr
 
 If a specific target doesn't work, I will explain it in this file
 
-
 Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/14cli_progress/code)-folder.
-
-
 
 ## Build all targets with Haxe and start the specific target
 
@@ -130,6 +115,3 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `build_all.hxml`
 3. type `haxe build_all.hxml`
 4. press enter
-
-
-
