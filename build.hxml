@@ -29,6 +29,13 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 02reading_haxe/code"
 
+# append file
+-cmd cd ../../
+-cmd cd 03append/code/
+--next
+build.hxml
+-cmd echo "│ ├── 03append_haxe/code"
+
 # local json database
 -cmd cd ../../
 -cmd cd 04haxelow/code/
