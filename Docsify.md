@@ -18,7 +18,7 @@ npm  i docsify-cli -g
 3. Copy all the folders/files into `docs` folder
 4. Add loadSidebar: true to window.$docsify in index.html
 5. That’s all there is to it! Now run: `docsify serve`
-6. And push it to Github Pages as explained here
+6. And push it to Github Pages as explained here.
 
 ## Resource
 
