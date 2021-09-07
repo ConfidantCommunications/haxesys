@@ -27,7 +27,7 @@ This example is getting to big to post here, so if you want to check out the com
 
 So the first part of this code is loading the `json` file:
 
-```
+```haxe
 var path = Path.normalize(Sys.getCwd().split('bin/')[0] + '/assets/users.json');
 
 if(sys.FileSystem.exists(path)){

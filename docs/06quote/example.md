@@ -32,7 +32,7 @@ Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxeunity/tree/m
 
 This is the most interesting part:
 
-```
+```haxe
 var req = new haxe.Http('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en');
 
 req.onData = function(data:String) {

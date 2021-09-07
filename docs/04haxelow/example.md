@@ -20,7 +20,7 @@ See example below:
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
-```
+```haxe
 class Main {
 	function new() {
 		trace("Haxelow Example");

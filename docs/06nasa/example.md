@@ -34,7 +34,7 @@ Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/mas
 
 This is the most interesting part:
 
-```
+```haxe
 var req = new haxe.Http( 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY' );
 
 req.onData = function (data : String)
