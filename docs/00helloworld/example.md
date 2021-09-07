@@ -18,18 +18,16 @@ Open your favorite editor, copy/paste the code and save it in the `src` folder.
 ```haxe
 package;
 
-class Main
-{
-	// constructor
+class Main {
 	function new() {
-		trace("Hello world");
+		trace('Hello world');
 	}
 
-	// run code automatically
 	static public function main() {
 		var main = new Main();
 	}
 }
+
 ```
 
 Below you can see and try the same example code at [try.haxe.org](https://try.haxe.org/) without installing Haxe.
