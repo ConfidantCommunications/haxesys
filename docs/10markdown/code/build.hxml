@@ -17,4 +17,10 @@
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
 
+# Uncaught exception Null Access
+# src/Main.hx:23: characters 12-52 : Called from here
+# src/Main.hx:137: characters 14-24 : Called from here
+# -cmd echo "  │ ├── interp (Eval)"
+# -cmd haxe build_interp.hxml
+
 -cmd echo "  └── Finished building targets"

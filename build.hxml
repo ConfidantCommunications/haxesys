@@ -2,7 +2,7 @@
 
 
 # extremly simple hello world
--cmd cd haxe/code/
+-cmd cd docs/haxe/code/
 --next
 -cmd echo "│ ├── haxe/code"
 build.hxml

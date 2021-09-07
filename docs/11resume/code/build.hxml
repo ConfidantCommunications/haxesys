@@ -5,15 +5,14 @@
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
 
-# lua: src/Main.hx:161: [FIXME] type: TFunction / indexOf: <function>
--cmd echo "  │ ├── lua [FIXME] type: TFunction / indexOf: <function>"
+# lua: main.lua:235: module 'hxsimdjson' not found:
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
 # hmmm weird stuff happening here, but neko is antique so might not be the best solution
--cmd echo "  │ ├── neko [FIXME]"
-# -cmd echo "  │ ├── neko"
-# -cmd haxe build_neko.hxml
+# -cmd echo "  │ ├── neko [FIXME]"
+-cmd echo "  │ ├── neko"
+-cmd haxe build_neko.hxml
 
 -cmd echo "  │ ├── cpp"
 -cmd haxe build_cpp.hxml
@@ -23,5 +22,12 @@
 -cmd haxe build_java.hxml
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
+
+# Uncaught exception Null Access
+# src/Main.hx:21: characters 12-52 : Called from here
+# src/Main.hx:193: characters 14-24 : Called from here
+# -cmd echo "  │ ├── interp (Eval)"
+# -cmd haxe build_interp.hxml
+
 
 -cmd echo "  └── Finished building targets"

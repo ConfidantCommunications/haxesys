@@ -2,14 +2,18 @@
 
 # https is not implemented in all system languages
 
+# src/Main.hx:10: https api call example NASA
+# src/Main.hx:32: status: 403
+# src/Main.hx:28: error: Http Error #403
 -cmd echo "  │ ├── node"
 -cmd haxe build_node.hxml
+
 
 # should work but doesnt
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
 
-# Runtime Error: Https support in haxe.Http is not implemented for this target
+# lua: main.lua:232: module 'hxsimdjson' not found:
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
@@ -26,6 +30,9 @@
 -cmd haxe build_java.hxml
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
+-cmd echo "  │ ├── interp (Eval)"
+-cmd haxe build_interp.hxml
+
 
 
 -cmd echo "  └── Finished building targets"
