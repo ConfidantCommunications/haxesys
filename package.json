@@ -3,19 +3,9 @@
   "version": "1.0.0",
   "description": "Documenting Haxe and system languages",
   "scripts": {
-    "test": "helloworld",
-    "build": "npm run build:remove && npm run gitbook:build && npm run build:rename",
-    "build:remove": "npm run build:remove:docs & npm run build:remove:book",
-    "build:remove:docs": "rm -rf docs",
-    "build:remove:book": "rm -rf _book",
-    "build:rename": "mv _book docs",
-    "deploy": "npm run build && npm run git:commit && npm run git:push",
+    "deploy": "npm run git:commit && npm run git:push",
     "git:commit": "git add -A . && git commit -a -m 'update docs haxesys documentation'",
-    "git:push": "git push",
-    "gitbook": "npm run gitbook:install && npm run gitbook:update",
-    "gitbook:install": "gitbook install",
-    "gitbook:update": "gitbook update",
-    "gitbook:build": "gitbook build"
+    "git:push": "git push"
   },
   "devDependencies": {},
   "repository": {
@@ -23,7 +13,15 @@
     "url": "git+https://github.com/MatthijsKamstra/haxesys.git"
   },
   "keywords": [
-    "js",
+    "cpp (C++)",
+    "cs (C#)",
+    "interp (Eval/Macro)",
+    "java",
+    "lua",
+    "jvm",
+    "neko",
+    "node.js",
+    "python",
     "haxe",
     "Haxe",
     "cs",
@@ -35,11 +33,6 @@
   "bugs": {
     "url": "https://github.com/MatthijsKamstra/haxesys/issues"
   },
-  "homepage": "https://github.com/MatthijsKamstra/haxejs#readme",
-  "dependencies": {
-    "gitbook-plugin-anchors": "^0.7.1",
-    "gitbook-plugin-disqus": "^0.1.0",
-    "gitbook-plugin-edit-link": "^2.0.2",
-    "gitbook-plugin-ga": "^1.0.1"
-  }
+  "homepage": "https://github.com/MatthijsKamstra/haxesys#readme",
+  "dependencies": {}
 }

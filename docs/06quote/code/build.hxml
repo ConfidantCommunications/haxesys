@@ -5,7 +5,7 @@
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
 
-#src/Main.hx:29: error: main.lua:3054: attempt to perform arithmetic on a nil value
+# lua: main.lua:231: module 'hxsimdjson' not found:
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
@@ -19,5 +19,7 @@
 -cmd haxe build_java.hxml
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
+-cmd echo "  │ ├── interp (Eval)"
+-cmd haxe build_interp.hxml
 
 -cmd echo "  └── Finished building targets"

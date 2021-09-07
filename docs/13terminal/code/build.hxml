@@ -9,8 +9,8 @@
 # not sure what happens with lua, most command just work..
 # Error: Command failed with error -10
 # Error: Command failed with error 1
-# -cmd echo "  │ ├── lua"
-# -cmd haxe build_lua.hxml
+-cmd echo "  │ ├── lua"
+-cmd haxe build_lua.hxml
 
 -cmd echo "  │ ├── neko"
 -cmd haxe build_neko.hxml
@@ -22,5 +22,12 @@
 -cmd haxe build_java.hxml
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
+
+# Uncaught exception Null Access
+# src/Main.hx:16: characters 12-52 : Called from here
+# src/Main.hx:51: characters 13-33 : Called from here
+# Error: Command failed with error 1
+# -cmd echo "  │ ├── interp (Eval)"
+# -cmd haxe build_interp.hxml
 
 -cmd echo "  └── Finished building targets"

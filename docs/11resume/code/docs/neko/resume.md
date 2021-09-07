@@ -1,0 +1,95 @@
+# Matthijs Kamstra
+## Programmer
+
+
+### Education
+ 
+- **Area:** Information Technology
+- **Institution:** University of Oklahoma
+- **StartDate:** 2011-06-01
+- **Gpa:** 4.0
+- **StudyType:** Bachelor
+- **Courses:** 
+- **EndDate:** 2014-01-01
+
+### Work
+ 
+- **Position:** CEO/President
+- **Website:** http://piedpiper.com
+- **Highlights:** 
+- **StartDate:** 2013-12-01
+- **Summary:** Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.
+- **Company:** Pied Piper
+- **EndDate:** 2014-12-01
+
+### Basics
+ 
+- **Phone:** (912) 555-4321
+- **Name:** Matthijs Kamstra
+- **Location:** 
+	- **City:** San Francisco
+	- **PostalCode:** CA 94115
+	- **CountryCode:** US
+	- **Region:** California
+	- **Address:** 2712 Broadway St
+- **Profiles:** 
+	- **Network:** Twitter
+	- **Url:** 
+	- **Username:** neutralthoughts
+	- **Network:** SoundCloud
+	- **Url:** https://soundcloud.com/dandymusicnl
+	- **Username:** dandymusicnl
+- **Label:** Programmer
+- **Email:** fake@foobar.com
+- **Website:** http://richardhendricks.com
+- **Picture:** http://matthijskamstra.nl/user/pages/01.home/00._hero/matthijs-kamsta_hero.jpg
+- **Summary:** Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+
+### Languages
+ 
+- **Fluency:** Native speaker
+- **Language:** English
+
+### Skills
+ 
+- **Name:** Web Development
+- **Level:** Master
+- **Keywords:** 
+- **Name:** Compression
+- **Level:** Master
+- **Keywords:** 
+
+### Volunteer
+ 
+- **Organization:** CoderDojo
+- **Position:** Teacher
+- **Website:** http://coderdojo.com/
+- **Highlights:** 
+- **StartDate:** 2012-01-01
+- **Summary:** Global movement of free coding clubs for young people.
+- **EndDate:** 2013-01-01
+
+### Awards
+ 
+- **Date:** 2014-11-01
+- **Awarder:** Techcrunch
+- **Summary:** There is no spoon.
+- **Title:** Digital Compression Pioneer Award
+
+### References
+ 
+- **Name:** Erlich Bachman
+- **Reference:** It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
+
+### Publications
+ 
+- **Publisher:** Hooli
+- **Name:** Video compression for 3d media
+- **ReleaseDate:** 2014-10-01
+- **Website:** http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)
+- **Summary:** Innovative middle-out compression algorithm that changes the way we store data.
+
+### Interests
+ 
+- **Name:** Wildlife
+- **Keywords:** 
