@@ -24,15 +24,15 @@ build.md
 _test
 
 # ignore out and bin folder
-00helloworld/code/out
-*/code/out
-*/*/code/out
-00helloworld/code/bin
-*/code/bin
-*/*/code/bin
-10markdown/code/www
-10markdown/code/docs
+docs/00helloworld/code/out
+docs/00helloworld/code/bin
+docs/10markdown/code/www
+docs/10markdown/code/docs
+docs/11resume/code/docs
+docs/*/code/out
+docs/*/*/code/out
+docs/*/code/bin
+docs/*/*/code/bin
 _vscode
-11resume/code/docs
 
 #
