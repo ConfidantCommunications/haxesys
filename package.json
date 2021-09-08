@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Documenting Haxe and system languages",
   "scripts": {
+    "start": "cd docs && docsify serve",
     "deploy": "npm run git:commit && npm run git:push",
     "git:commit": "git add -A . && git commit -a -m 'update docs haxesys documentation'",
     "git:push": "git push"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatthijsKamstra/haxesys.git"
@@ -34,5 +34,7 @@
     "url": "https://github.com/MatthijsKamstra/haxesys/issues"
   },
   "homepage": "https://github.com/MatthijsKamstra/haxesys#readme",
-  "dependencies": {}
+  "dependencies": {
+    "docsify-cli": "^4.4.3"
+  }
 }
