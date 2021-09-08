@@ -43,6 +43,6 @@
   - [More like this](resources/more.md)
   - [Try Haxe!](https://try.haxe.org/)
   - [Community](http://community.haxe.org/)
-  * [Contribute](https://github.com/MatthijsKamstra/haxesys/blob/master/contribute.md)
+  - [Contribute](https://github.com/MatthijsKamstra/haxesys/blob/master/contribute.md)
 - [Source](https://github.com/MatthijsKamstra/haxesys/)
 - [Suggestion Box](https://github.com/MatthijsKamstra/haxesys/issues/2)
