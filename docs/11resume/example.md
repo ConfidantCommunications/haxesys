@@ -1,6 +1,6 @@
 # Example resume.json
 
-I have created [resume.json](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code/assets/resume.json) via the npm from <https://jsonresume.org/>
+I have created [resume.json](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code/assets/resume.json) via the npm from <https://jsonresume.org/>
 
 ```
 npm install -g resume-cli
@@ -12,7 +12,7 @@ And created a "empty" resume.json
 resume init
 ```
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code) for more comments.
 
 In this example we are going to read and use a `.json` file.
 We will convert the json to `.md`, `.txt` and some basic `.html`
@@ -34,7 +34,7 @@ See example below:
 
 ## The Main.hx
 
-This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code/src/Main.hx)
+This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code/src/Main.hx)
 
 So the first part of this code is loading the `json` file:
 
@@ -62,7 +62,7 @@ To make that easier I use [`typedef`](http://haxe.org/manual/type-system-typedef
 
 We convert the json data to `ResumeObjObj` so when we use a IDE it will use autocompletion
 
-Check out [AST.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code/src/AST.hx), it's too big to show it all here.
+Check out [AST.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code/src/AST.hx), it's too big to show it all here.
 
 But the "toplevel" you can see the basic structure of resume.json
 
@@ -88,10 +88,9 @@ So you could build with one file many backends.
 
 But not every feature works automaticly in all the languages and to prevent it from building I decided to have a little different structure.
 
-Currently I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code/build.hxml) for vscode syntax checking:
+Currently I use [`build_interp.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code/build_interp.hxml) for vscode syntax checking:
 
 ```bash
--lib markdown
 -cp src
 -D analyzer-optimize
 -main Main
@@ -110,11 +109,11 @@ And have individual build files for the different targets:
 - build_node.hxml
 - build_python.hxml
 
-To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code/build_all.hxml) to build all other build files.
+To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code/build.hxml) to build all other build files.
 
 If a specific target doesn't work, I will explain it in this file
 
-Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/11resume/code)-folder.
+Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/11resume/code)-folder.
 
 ## Build all targets with Haxe and start the specific target
 
