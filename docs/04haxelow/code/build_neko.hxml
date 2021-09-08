@@ -4,6 +4,7 @@
 -neko bin/neko/main.n
 # -debug
 -dce full
+-D no-deprecation-warnings
 
 --next
 
