@@ -45,4 +45,4 @@
   - [Community](http://community.haxe.org/)
   - [Contribute](https://github.com/MatthijsKamstra/haxesys/blob/master/contribute.md)
 - [Source](https://github.com/MatthijsKamstra/haxesys/)
-- [Suggestion Box](https://github.com/MatthijsKamstra/haxesys/issues/2)
+- [Suggestion Box](https://github.com/MatthijsKamstra/haxesys/issues)
