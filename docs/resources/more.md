@@ -2,7 +2,6 @@
 
 So you want more...
 
-
 ## Haxe and Node.js
 
 ![Haxe logo](../img/haxe_nodejs_logos.png)
@@ -26,4 +25,3 @@ So you want more...
 ![Haxe logo](../img/haxe_python_logos.png)
 
 [haxepython](http://matthijskamstra.github.io/haxepython/)
-

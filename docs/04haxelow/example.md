@@ -70,10 +70,9 @@ So you could build with one file many backends.
 
 But not every feature works automaticly in all the languages and to prevent it from building I decided to have a little different structure.
 
-Currently I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/04haxelow/code/build.hxml) for vscode syntax checking:
+Currently I use [`build_interp.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/04haxelow/code/build_interp.hxml) for vscode syntax checking:
 
 ```bash
--lib markdown
 -cp src
 -D analyzer-optimize
 -main Main
@@ -92,11 +91,11 @@ And have individual build files for the different targets:
 - build_node.hxml
 - build_python.hxml
 
-To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/04haxelow/code/build_all.hxml) to build all other build files.
+To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/04haxelow/code/build.hxml) to build all other build files.
 
 If a specific target doesn't work, I will explain it in this file
 
-Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/04haxelow/code)-folder.
+Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/04haxelow/code)-folder.
 
 ## Build all targets with Haxe and start the specific target
 

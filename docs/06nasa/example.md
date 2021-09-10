@@ -1,6 +1,6 @@
 # Example Nasa
 
-Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/06nasa/code) for more comments.
+Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/06nasa/code) for more comments.
 
 <https://github.com/HaxeFoundation/haxe/blob/945461390b774b761f57777365b1e0cbb3ac26be/std/sys/Http.hx#L98>
 
@@ -12,7 +12,7 @@ This is an NASA api example.
 You can get an api key if you plan to use it a lot and that is without a price.
 But it also works without one.
 
-_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxesys/tree/master/06nasa/code)._
+_The code used in this example can be found [here](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/06nasa/code)._
 
 ## How to start
 
@@ -30,7 +30,7 @@ See example below:
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
-Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/06nasa/code/src/Main.hx).
+Check the complete [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/06nasa/code/src/Main.hx).
 
 This is the most interesting part:
 
@@ -68,10 +68,9 @@ So you could build with one file many backends.
 
 But not every feature works automaticly in all the languages and to prevent it from building I decided to have a little different structure.
 
-Currently I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/06nasa/code/build.hxml) for vscode syntax checking:
+Currently I use [`build_interp.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/06nasa/code/build_interp.hxml) for vscode syntax checking:
 
 ```bash
--lib markdown
 -cp src
 -D analyzer-optimize
 -main Main
@@ -90,11 +89,11 @@ And have individual build files for the different targets:
 - build_node.hxml
 - build_python.hxml
 
-To build all projects I use [`build_all.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/06nasa/code/build_all.hxml) to build all other build files.
+To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/06nasa/code/build.hxml) to build all other build files.
 
 If a specific target doesn't work, I will explain it in this file
 
-Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/06nasa/code)-folder.
+Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/06nasa/code)-folder.
 
 ## Build all targets with Haxe and start the specific target
 

@@ -4,6 +4,7 @@
 -python bin/python/main.py
 # -debug
 -dce full
+-D no-deprecation-warnings
 
 --next
 

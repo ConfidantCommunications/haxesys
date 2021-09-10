@@ -4,6 +4,7 @@
 --jvm bin/jvm/Main.jar
 # -debug
 -dce full
+-D no-deprecation-warnings
 
 --next
 

@@ -4,6 +4,7 @@
 -cs bin/cs
 # -debug
 -dce full
+-D no-deprecation-warnings
 
 --next
 

@@ -21,7 +21,7 @@ But Haxe has more system targets, that probably work exactly the same:
 - php
 
 Practical information how to start are none existing, so I started to document my research.
-I hope this will help. If you think so, why not help with [contribution](contribute.md) to this tutorial site.
+I hope this will help. If you think so, why not help with [contribution](https://github.com/MatthijsKamstra/haxesys/blob/master/contribute.md) to this tutorial site.
 
 ## Node.js
 

@@ -2,7 +2,6 @@
 
 ![Haxe logo](../img/haxe_logo.png)
 
-
 Lets get the Wikipedia description first:
 
 > Haxe is an open source high-level multi-platform programming language and compiler that can produce applications and source code for many different platforms from a single code-base.
@@ -11,10 +10,9 @@ Lets get the Wikipedia description first:
 >
 > Code written in the Haxe language can be source-to-source compiled into ActionScript 3 code, JavaScript programs, Java, C# , C++ standalone applications, Python, PHP, Apache CGI, and Node.js server-side applications.
 
+_From [wikipedia](https://en.wikipedia.org/wiki/Haxe)_
 
-*From [wikipedia](https://en.wikipedia.org/wiki/Haxe)*
-
-----
+---
 
 And the official description:
 
@@ -22,46 +20,51 @@ And the official description:
 >
 > Haxe is strongly typed but the typing system can be subverted where required. Utilizing type information, the Haxe type system can detect errors at compile-time which would only be noticeable at run-time in the target language. Furthermore, type information can be used by the target generators to generate optimized and robust code.
 
+_From [haxe.org - manual](http://haxe.org/manual/introduction-what-is-haxe.html)_
 
-*From [haxe.org - manual](http://haxe.org/manual/introduction-what-is-haxe.html)*
+---
 
------
+## Personal
 
-## History
+I have though long if I wanted to add a personal note to the "What is Haxe" section. And what would it add?
+But I think it will give context why, or who is using Haxe.
 
-A long time ago, there was MTASC, the ActionScript 2 compiler which brought Flash to the entreprise,
-and its author, [Nicolas Cannasse](https://twitter.com/ncannasse), decided to create a new open-source
-language inspired by ActionScript and ML languages like Ocaml: Haxe.
+I was an ActionScript developer, but we can say that language is dead.
+There is a part of me that could rant about that, but it's easier just to say "let move on".
 
-Around 2006, Haxe was born, designed to be adapted to a wide variety of targets, including Flash and JavaScript.
+I originally studied to be a graphic designer. But discovered that I could do animation pretty good.
+I started using Flash as an animator and learned how to program in Flash. Later in a IDE (SE|PY written in Python if I'm not mistaken).
+I started to experiment with MTASC (which is the Haxe predecessor) because it compiled faster then Flash did.
 
-## Early users
+Then Nicolas stopped working on MTASC and focused on Haxe. He lost me there, I was to junior-dev to understand what he was doing, and at the time nobody around me was interested in it.
 
-It was already the most modern compile-to-JS language, but of course a big focus from the author's company
-was games, and likewise the initial community using Haxe was certainly oriented into gaming more than web apps.
+Somewhere it must have grabbed my attention again! And I using it (for hobby projects) for x years (probably less then 10 years, but more then 5 years)
 
-Quickly small companies and indie developers wanted to just code everything with Haxe: PHP on the server,
-JS for the web interactions, Flash for games, then C++ to look for more performance and freedom in games.
+From a ActionScript background it's not difficult at all to work with Haxe. And I guess the same is for JavaScript developers.
 
-NME and OpenFl appeared as the first big efforts to reproduce the Flash API for desktop and mobile - people
-have started, abusively, assimilating OpenFl with Haxe, while it was just one library among many.
+I love the fact that I have one language and with a little work you can export to different targets.
 
-## The raise of JavaScript
+I can create a PHP backend without writing PHP (I have to figure out some stuff that you don't have in ActionScript)
 
-JavaScript has taken the world by storm now; people use it for increasingly complex browser apps, but also
-for command line and server applications, and even more recently for native apps using react-native.
+With Openfl (written on top of Haxe) I can create IOS, Android and html5 applications in a short time.
 
-Following this trend, users of Haxe-JavaScript have also grown and keep up with the state of the art,
-and Haxe developers believe it's a better language for small to huge JavaScript projects.
+I'm focused on JavaScript and NodeJs for the time being but that could change.
 
-A popular language like TypeScript, which appeared much later than Haxe and recently gained a large
-following thanks to being closer to ES6 and backed by big corporations, shows that typed languages
-are a concern which appeals to JavaScript developers. And while TypeScript is a decent language, it
-essentially has the same pros and cons as regular JavaScript and compilation is several orders of
-magnitude slower than Haxe for large projects.
+<a name="2ct"></a>
 
-This documentation will hopefully demonstrate how easy it is to use Haxe for JavaScript development. It
-may not look as easy as other compile-to-JS to get started but it really doesn't require a big investment
-to become familiar with it - and it will make you a better programmer.
+## [My two cents](https://en.wikipedia.org/wiki/My_two_cents)
+
+My primary reasons to write this documentation is the fact that the focus of Haxe seems to be on games. This may not be a conscious decision. It's not strange because [Nicolas](https://twitter.com/ncannasse) (original creator of Haxe) earns his money with [games](http://shirogames.com/).
+
+I think it's a mistake from the HaxeFoundation to leave this impression as-is! If Haxe wants to attract more developer. Become mainstream it should focus (more) on JavaScript target.
+
+We (Haxe) need more people that speak up, about other things then games!
+
+JavaScript developers should be able to learn Haxe. And they will enjoy working with Haxe.
+
+It's shouldn't be difficult to convince JavaScript developers. Especially the ones that tried Coffeescript of Typescript.
+
+But it should be more visible, more prominent and more documented to help you with the transition.
+I hope this documentation will help (a little).
 
 ---

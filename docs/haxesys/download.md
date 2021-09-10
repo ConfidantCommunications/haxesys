@@ -30,7 +30,8 @@ But if the version numbers changed, it means I haven't updated this part of the 
 
 - Get your version here: [http://haxe.org/download/](http://haxe.org/download/)
 
-<a name="haxelib">
+<a name="haxelib"></a>
+
 ### Haxelib
 
 After you have installed Haxe, you automatically have access to `haxelib`. Use that you install `hxcs`:
@@ -41,7 +42,8 @@ haxelib install hxcs
 
 Source: <https://haxe.org/manual/target-cs-getting-started.html>
 
-<a name="cs">
+<a name="cs"></a>
+
 ## Download .NET development framework
 
 Not sure you need to do this
@@ -52,7 +54,8 @@ Not sure you need to do this
 
 Press that big "Get started"-button and you will get instructions how to proceed on your platform.
 
-<a name="mono">
+<a name="mono"></a>
+
 ## Mono
 
 For osx:
@@ -65,7 +68,8 @@ Perhaps needs to be installed as well? Could be installed with Unity?
 
 Install the latest <a href="https://www.mono-project.com/download/stable/">Mono Compiler</a> <br/>
 
-<a name="lua">
+<a name="lua"></a>
+
 ## Lua
 
 source: https://haxe.org/manual/target-lua-getting-started.html

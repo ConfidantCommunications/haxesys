@@ -8,8 +8,6 @@
 -cmd echo "  │ ├── node"
 -cmd haxe build_node.hxml
 
-
-# should work but doesnt
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
 
