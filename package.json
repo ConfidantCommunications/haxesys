@@ -5,7 +5,9 @@
   "scripts": {
     "deploy": "npm run git:commit && npm run git:push",
     "git:commit": "git add -A . && git commit -a -m 'update docs haxesys documentation'",
-    "git:push": "git push"
+    "git:push": "git push",
+    "docsify:init": "npm install && npm docsify",
+    "docsify": "cd docs && docsify serve"
   },
   "devDependencies": {},
   "repository": {
@@ -34,5 +36,7 @@
     "url": "https://github.com/MatthijsKamstra/haxesys/issues"
   },
   "homepage": "https://github.com/MatthijsKamstra/haxesys#readme",
-  "dependencies": {}
+  "dependencies": {
+    "docsify-cli": "^4.4.3"
+  }
 }

@@ -1,6 +1,7 @@
 # Convert from Gitbook to Docsify
 
 I used Gitbook for generation of this documentation. However, recently I started looking for alternatives in case GitBook stops being free.
+
 The tools I had didn't work anymore, didn't want to make an login on the new platform.
 
 I have worked with docsify before and the migration is really easy.
@@ -19,6 +20,19 @@ npm  i docsify-cli -g
 4. Add loadSidebar: true to window.$docsify in index.html
 5. That’s all there is to it! Now run: `docsify serve`
 6. And push it to Github Pages as explained here.
+
+Specific for my documentation:
+
+- copy `readme.md` to docs
+- copy `.nojekyll` to docs  (if not generated)
+- copy `index.html` to docs (if not generated)
+- copy `favicon.ico` to docs
+- update `index.html` the js: `window.$docsify`
+- copy data from `book.json` to `window.$docsify`
+- change `_sidebar.md` "example" to example
+- change `_sidebar.md`  "How to" to "More info"
+
+
 
 ## Resource
 
