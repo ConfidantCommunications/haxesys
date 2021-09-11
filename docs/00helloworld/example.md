@@ -89,6 +89,6 @@ Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxe
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `build_all.hxml`
-3. type `haxe build_all.hxml`
+2. `cd ` to the correct folder where you have saved the `build.hxml`
+3. type `haxe build.hxml`
 4. press enter
