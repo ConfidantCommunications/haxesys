@@ -107,6 +107,27 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 14cli_progress/code"
 
+# 15googlesheet
+-cmd cd ../../
+-cmd cd 15googlesheet/code/
+--next
+build.hxml
+-cmd echo "│ ├── 15googlesheet/code"
+
+# 16flatfile
+-cmd cd ../../
+-cmd cd 16flatfile/code/
+--next
+build.hxml
+-cmd echo "│ ├── 16flatfile/code"
+
+# 17sqlite
+-cmd cd ../../
+-cmd cd 17sqlite/code/
+--next
+build.hxml
+-cmd echo "│ ├── 17sqlite/code"
+
 # 19untyped
 -cmd cd ../../
 -cmd cd 19untyped/code/
