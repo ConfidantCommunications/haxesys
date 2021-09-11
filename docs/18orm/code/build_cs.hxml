@@ -1,0 +1,13 @@
+-lib record-macros
+-cp src
+-main Main
+-cs bin/cs
+# -debug
+-dce full
+-D no-deprecation-warnings
+
+--next
+
+# run application
+-cmd cd bin/cs/bin
+-cmd mono Main.exe

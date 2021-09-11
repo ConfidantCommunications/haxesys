@@ -1,19 +1,16 @@
 package;
 
-import python.Lib;
 import sys.FileSystem;
 
 class Main {
 	public function new() {
-		var html = '';
-
 		// initialize the connection
-		var useMysql = true;
+		var useMysql = false;
 		var isDummyData = false;
 
 		// check if file exists
 		if (!useMysql) {
-			if (!sys.FileSystem.exists("mybase.ddb")) {
+			if (!sys.FileSystem.exists("mybase.db")) {
 				// init SQlite database
 				new DBStart(useMysql);
 			}
@@ -58,6 +55,7 @@ class Main {
 	}
 
 	function createList():Void {
+		var csv = 'id,name,birthday,phoneNumber\n';
 		var html = '';
 		html += '<table style="width:100%">';
 		html += '<tr><th>id</th><th>name</th><th>birthday</th><th>phoneNumber</th></tr>';
@@ -71,10 +69,13 @@ class Main {
 			html += '<td>${_user.birthday}</td>';
 			html += '<td>${_user.phoneNumber}</td>';
 			html += '</tr>';
+			html += '</tr>';
+
+			csv += '${_user.id},${_user.name},${_user.birthday},${_user.phoneNumber}\n';
 		}
 		html += '</table>';
 
-		Lib.print(html);
+		Sys.println(csv);
 	}
 
 	static public function main():Void {

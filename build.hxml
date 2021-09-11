@@ -128,6 +128,13 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 17sqlite/code"
 
+# 18orm
+-cmd cd ../../
+-cmd cd 18orm/code/
+--next
+build.hxml
+-cmd echo "│ ├── 18orm/code"
+
 # 19untyped
 -cmd cd ../../
 -cmd cd 19untyped/code/

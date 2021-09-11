@@ -1,0 +1,14 @@
+-lib record-macros
+
+-cp src
+-main Main
+-python bin/python/main.py
+# -debug
+-dce full
+-D no-deprecation-warnings
+
+--next
+
+# run application
+-cmd cd bin/python
+-cmd python3 main.py
