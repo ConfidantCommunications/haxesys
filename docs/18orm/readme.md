@@ -1,6 +1,5 @@
 - https://github.com/xerial/sqlite-jdbc/releases
-
-https://github.com/HaxeFoundation/record-macros
+- https://github.com/HaxeFoundation/record-macros
 
 Macro-based ORM (object-relational mapping)
 

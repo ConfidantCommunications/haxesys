@@ -3,10 +3,9 @@
 In a previous example we used a simple flat-file 'database'.
 An SQLite database is a database but the lite version. It's the local database for a lot of (mobile)apps.
 
-We will be using [SPOD macros](http://old.haxe.org/manual/spod)
-Check more info in the [about](about.md).
+_The code used in this example is [here](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/10sqlite/code)._
 
-_The code used in this example is [here](https://github.com/MatthijsKamstra/haxephp/tree/master/10sqlite/code)._
+This examle is from: jsward (https://gist.github.com/jcward/a2bc21576cba2587bba1d18b647c0f7d)
 
 ## How to start
 
@@ -23,12 +22,12 @@ See example below:
 
 ## The Main.hx
 
-This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxephp/tree/master/10sqlite/code/Main.hx)
+This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/10sqlite/code/Main.hx)
 
 First we need a database, so I wrote a class that creates one for you: `DBStart.hx`.
 This class generates random users.
 
-```
+```haxe
 	// Open a connection
 	var cnx = sys.db.Sqlite.open("mybase.ddb");
 
@@ -104,20 +103,39 @@ Now we have a database, lets check out the code to get the data from the databas
 
 ## The Haxe build file, build.hxml
 
-There are a lot of different arguments that you are able to pass to the Haxe compiler.
-These arguments can also be placed into a text file of one per line with the extension hxml. This file can then be passed directly to the Haxe compiler as a build script.
+Normally you would have one `build.hxml` that would build everything you want to transpile to.
+So you could build with one file many backends.
 
-```
-# // build.hxml
+But not every feature works automaticly in all the languages and to prevent it from building I decided to have a little different structure.
+
+Currently I use [`build_interp.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/15googlesheet/code/build_interp.hxml) for vscode syntax checking:
+
+```bash
 -cp src
+-D analyzer-optimize
 -main Main
--python bin/example.py
--dce full
--cmd cd bin
--cmd python3 example.py
+--interp
 ```
 
-## Build Python with Haxe
+And have individual build files for the different targets:
+
+- build_cpp.hxml
+- build_cs.hxml
+- build_interp.hxml
+- build_java.hxml
+- build_jvm.hxml
+- build_lua.hxml
+- build_neko.hxml
+- build_node.hxml
+- build_python.hxml
+
+To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/15googlesheet/code/build.hxml) to build all other build files.
+
+If a specific target doesn't work, I will explain it in this file
+
+Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/15googlesheet/code)-folder.
+
+## Build all targets with Haxe and start the specific target
 
 To finish and see what we have, build the file and see the result
 
@@ -125,9 +143,3 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `build.hxml`
 3. type `haxe build.hxml`
 4. press enter
-
-## More info
-
-- <http://api.haxe.org/sys/db/Sqlite.html>
-- <http://old.haxe.org/doc/neko/spod>
-- <http://old.haxe.org/manual/spod>

@@ -38,6 +38,9 @@
   - [More info](15googlesheet/about.md)
 - [Example sqlite](17sqlite/example.md)
   - [More info](17sqlite/about.md)
+  - [Install](17sqlite/install.md)
+- [Example ORM](18orm/example.md)
+  - [More info](18orm/about.md)
 - [Example hxml](20build/example.md)
   - [More info](20build/about.md)
 - Resources

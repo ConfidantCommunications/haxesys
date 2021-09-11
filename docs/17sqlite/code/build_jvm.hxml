@@ -1,3 +1,6 @@
+-cmd sh java.sh
+
+--next
 
 -cp src
 --main Main
@@ -7,7 +10,8 @@
 -D no-deprecation-warnings
 
 # https://github.com/xerial/sqlite-jdbc/releases
---java-lib sqlite-jdbc-3.36.0.3.jar
+--java-lib sqlite-jdbc.jar
+
 
 --next
 
