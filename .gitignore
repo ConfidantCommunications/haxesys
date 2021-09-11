@@ -16,3 +16,5 @@ docs/*/code/out
 docs/*/*/code/out
 docs/*/code/bin
 docs/*/*/code/bin
+# will be downloaded via curl
+docs/_10sqlite/code/sqlite-jdbc-3.36.0.3.jar
