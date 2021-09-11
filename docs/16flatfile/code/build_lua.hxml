@@ -3,6 +3,7 @@
 -lua bin/lua/main.lua
 # -debug
 -dce full
+# -D haxeJSON
 
 --next
 
