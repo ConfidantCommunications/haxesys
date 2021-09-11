@@ -36,6 +36,8 @@
 - [Example ProgressBar](14cli_progress/example.md)
 - [Example Google sheet](15googlesheet/example.md)
   - [More info](15googlesheet/about.md)
+- [Example sqlite](17sqlite/example.md)
+  - [More info](17sqlite/about.md)
 - [Example hxml](20build/example.md)
   - [More info](20build/about.md)
 - Resources
