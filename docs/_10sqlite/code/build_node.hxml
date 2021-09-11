@@ -1,0 +1,18 @@
+# https://github.com/ciscoheat/haxelow
+# For Node.js: Define -D nodejs or use -lib hxnodejs. The npm packages steno and graceful-fs are required.
+
+-lib hxnodejs
+
+-cp src
+-main Main
+-js bin/node/main.js
+# -debug
+-dce full
+-D js-es=6
+-D no-deprecation-warnings
+
+--next
+
+# run application
+-cmd cd bin/node
+-cmd node main.js

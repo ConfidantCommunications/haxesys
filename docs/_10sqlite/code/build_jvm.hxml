@@ -1,0 +1,16 @@
+
+-cp src
+--main Main
+--jvm bin/jvm/Main.jar
+# -debug
+-dce full
+-D no-deprecation-warnings
+
+# https://github.com/xerial/sqlite-jdbc/releases
+--java-lib sqlite-jdbc-3.36.0.3.jar
+
+--next
+
+# run application
+-cmd cd bin/jvm
+-cmd java -jar Main.jar

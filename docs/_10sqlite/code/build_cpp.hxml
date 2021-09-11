@@ -1,0 +1,13 @@
+
+-cp src
+-main Main
+-cpp bin/cpp
+# -debug
+-dce full
+-D no-deprecation-warnings
+
+--next
+
+# run application
+-cmd cd bin/cpp
+-cmd ./Main
