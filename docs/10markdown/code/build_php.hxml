@@ -1,8 +1,15 @@
+-lib markdown
+
 -cp src
 -main Main
 -php bin/php
 # -debug
 -dce full
 -D no-deprecation-warnings
+
+
+# copy paste the assets/users.json to the correct folder
+--cmd cp -r assets bin/php/assets
+
 
 

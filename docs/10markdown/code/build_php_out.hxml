@@ -1,3 +1,4 @@
+-lib markdown
 
 # I use this file to export to one specific folder, this way I don't have to update my settings for every examle
 
@@ -8,4 +9,7 @@
 -dce full
 -D no-deprecation-warnings
 
+
+# copy paste the assets/users.json to the correct folder
+--cmd cp -r assets ../../../php/assets
 
