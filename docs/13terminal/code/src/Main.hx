@@ -39,12 +39,11 @@ class Main {
 		var out = p.stdout.readAll().toString();
 		p.close();
 
-		if(out.indexOf('ffmpeg version') != -1){
-			trace('You have ffmpeg installed!');
+		if (out.indexOf('ffmpeg version') != -1) {
+			trace('[YES] You have ffmpeg installed!');
 		} else {
-			trace('Visit ffmpeg.org to install!');
+			trace('[NO] Visit ffmpeg.org to install!');
 		}
-
 	}
 
 	static public function main() {
