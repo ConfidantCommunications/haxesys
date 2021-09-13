@@ -25,12 +25,11 @@ class Main {
 		else {
 			// Open a connection
 			cnx = sys.db.Mysql.connect({
-				host: "localhost",
-				port: 3306,
-				database: "MyDatabase",
 				user: "root",
-				pass: "",
-				socket: null
+				pass: "mysql",
+				host: "localhost",
+				database: "MyHaxeDatabase",
+				port: 8889,
 			});
 		}
 

@@ -41,6 +41,7 @@
   - [Install](17sqlite/install.md)
 - [Example ORM](18orm/example.md)
   - [More info](18orm/about.md)
+  - [Install](18orm/install.md)
 - [Example hxml](20build/example.md)
   - [More info](20build/about.md)
 - Resources
