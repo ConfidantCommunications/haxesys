@@ -1,11 +1,18 @@
 # Example SQLite database
 
-In a previous example we used a simple flat-file 'database'.
-An SQLite database is a database but the lite version. It's the local database for a lot of (mobile)apps.
+In the example with [HaxeLow](../04haxelow) we use a `.json` as database.
+And we use a simular opproach with [flatfile](../16flatfile) `database`;
+
+In this examle we will be using a SQLite database. This is a "normal" database but the lite version. It's the local database for a lot of (mobile)apps.
 
 _The code used in this example is [here](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/10sqlite/code)._
 
-This examle is from: jsward (https://gist.github.com/jcward/a2bc21576cba2587bba1d18b647c0f7d)
+The code used in this examle is from Jeff Ward (https://gist.github.com/jcward/a2bc21576cba2587bba1d18b647c0f7d)
+
+The sqllite database (written to the local directory as test.db) works (interoperably) in Neko, hxcpp (and many other platforms.) See:
+
+- https://api.haxe.org/sys/db/Connection.html
+- https://api.haxe.org/sys/db/ResultSet.html
 
 ## How to start
 
@@ -22,83 +29,46 @@ See example below:
 
 ## The Main.hx
 
-This example is getting to big to post here, so if you want to check out the complete file go and check out [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/10sqlite/code/Main.hx)
+Check out the whole file here [Main.hx](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/10sqlite/code/Main.hx)
 
-First we need a database, so I wrote a class that creates one for you: `DBStart.hx`.
-This class generates random users.
+We will generate a `test.db`, and if you have not added the table "artist_backup" it will do that first.
+
+Then add a "John" artist.
+
+And then trace all the entries in the database.
 
 ```haxe
-	// Open a connection
-	var cnx = sys.db.Sqlite.open("mybase.ddb");
 
-	// Set as the connection for our SPOD manager
-	sys.db.Manager.cnx = cnx;
+	var conn = sys.db.Sqlite.open("test.db");
 
-	// initialize manager
-	sys.db.Manager.initialize();
+	var rs = conn.request('
+CREATE TABLE IF NOT EXISTS artists_backup
+(
+artistid INTEGER PRIMARY KEY AUTOINCREMENT,
+name NVARCHAR
+);');
 
-	// Create the "user" table
-	if ( !sys.db.TableCreate.exists(User.manager) ) {
-		sys.db.TableCreate.create(User.manager);
+	var rs = conn.request('
+INSERT INTO artists_backup (name) VALUES ("John");');
+
+	var rs = conn.request('
+SELECT * FROM artists_backup;');
+
+	trace('-- SELECT * FROM artists_backup');
+	for (record in (rs : Iterator<ArtistsBackupRecord>)) {
+		trace('${record.artistid}) ${record.name} --> ${haxe.Json.stringify(record)}');
 	}
-
-	// Fill database with users
-	for (i in 0 ... 10) {
-		var user = createRandomUser();
-		user.insert();
-	}
-
-	// close the connection and do some cleanup
-	sys.db.Manager.cleanup();
-
-	// Close the connection
-	cnx.close();
 
 ```
 
-The function `createRandomUser()` does what you would expect, if you want to know, check the source code.
+To convert the data back we use a typedef
 
-A user!
-We have used a `typedef` before, this looks similar.
-The strange stuff here are the types, they are not the default types that Haxe uses.
-Read more about that: [creating-a-spod](http://old.haxe.org/manual/spod#creating-a-spod).
-
-```
-import sys.db.Types;
-
-class User extends sys.db.Object {
-    public var id : SId;
-    public var name : SString<32>;
-    public var birthday : SDate;
-    public var phoneNumber : SNull<SText>;
+```haxe
+typedef ArtistsBackupRecord = {
+	artistid:Int,
+	name:String
 }
 
-```
-
-Now we have a database, lets check out the code to get the data from the database:
-
-`Main.hx`
-
-```
-	// Open a connection
-	var cnx = sys.db.Sqlite.open("mybase.ddb");
-
-	// Set as the connection for our SPOD manager
-	sys.db.Manager.cnx = cnx;
-
-	// initialize manager
-	sys.db.Manager.initialize();
-
-	for (i in 0 ... User.manager.all().length) {
-	 	var _user = User.manager.get(i);
-	 	if(_user != null) trace(_user.name);
-	}
-
-	// close the connection and do some cleanup
-	sys.db.Manager.cleanup();
-
-	// Close the connection
-	cnx.close();
 ```
 
 ## The Haxe build file, build.hxml

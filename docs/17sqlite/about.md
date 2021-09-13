@@ -1,7 +1,9 @@
 # About SQLite
 
-In a previous example we used a simple flat-file 'database'.
-An SQLite database is a database but the lite version. It's the local database for a lot of (mobile)apps.
+In the example with [HaxeLow](../04haxelow) we use a `.json` as database.
+And we use a simular opproach with [flatfile](../16flatfile) `database`;
+
+In this examle we will be using a SQLite database. This is a "normal" database but the lite version. It's the local database for a lot of (mobile)apps.
 
 ## What is SQLite?
 
@@ -9,7 +11,7 @@ An SQLite database is a database but the lite version. It's the local database f
 
 **source: <https://www.sqlite.org/>**
 
-Or (because it's the first place you look for information):
+Or (because wikipedia is the first place you look for information):
 
 > SQLite is a relational database management system contained in a C programming library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program.
 >

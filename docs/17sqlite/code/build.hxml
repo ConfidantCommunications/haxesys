@@ -18,6 +18,8 @@
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
+-cmd echo "  │ ├── php"
+-cmd haxe build_php.hxml
 -cmd echo "  │ ├── neko"
 -cmd haxe build_neko.hxml
 -cmd echo "  │ ├── cpp"

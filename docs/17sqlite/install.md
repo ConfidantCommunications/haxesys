@@ -6,13 +6,13 @@ The documentation tells us that sqlite are available on `php`, `neko`, `cpp`, `j
 
 In this example I'm not going to test
 
-- php
 - hl
 
 so I am not sure if it works or not.
 
 The targets I have tested;
 
+- php
 - cpp
 - cs (need to install something, didn't do that, so I don't know)
 - java

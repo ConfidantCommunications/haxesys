@@ -19,3 +19,4 @@ docs/*/*/code/bin
 # will be downloaded via curl
 docs/*/code/sqlite-jdbc-3.36.0.3.jar
 
+php

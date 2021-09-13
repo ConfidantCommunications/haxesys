@@ -32,6 +32,7 @@ Specific for my documentation:
 - copy data from `book.json` to `window.$docsify`
 - change `_sidebar.md` "example" to example
 - change `_sidebar.md`  "How to" to "More info"
+- convert path to code
 
 
 
