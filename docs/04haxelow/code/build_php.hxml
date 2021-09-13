@@ -1,3 +1,4 @@
+-lib haxelow
 -cp src
 -main Main
 -php bin/php

@@ -3,28 +3,39 @@
 # for this project you need to install:
 # https://github.com/ciscoheat/haxelow
 
+-cmd echo "  │ ├── cpp"
+-cmd haxe build_cpp.hxml
+-cmd echo "  │ ├── cs"
+-cmd haxe build_cs.hxml
+# -cmd echo "  │ ├── hl"
+# -cmd haxe build_hl.hxml
+-cmd echo "  │ ├── interp (Eval)"
+-cmd haxe build_interp.hxml
+-cmd echo "  │ ├── java"
+-cmd haxe build_java.hxml
+-cmd echo "  │ ├── lua"
+-cmd haxe build_lua.hxml
+
+# Exception in thread "main" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.
+# -cmd echo "  │ ├── jvm"
+# -cmd haxe build_jvm.hxml
+
+-cmd echo "  │ ├── neko"
+-cmd haxe build_neko.hxml
+
 # For Node.js: Define -D nodejs or use -lib hxnodejs. The npm packages steno and graceful-fs are required.
 # so I decided it would be become to complex te explain for this documentation
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 
+# Fatal error: Uncaught ErrorException: Undefined property:
+# -cmd echo "  │ ├── php"
+# -cmd haxe build_php.hxml
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
--cmd echo "  │ ├── lua"
--cmd haxe build_lua.hxml
--cmd echo "  │ ├── neko"
--cmd haxe build_neko.hxml
--cmd echo "  │ ├── cpp"
--cmd haxe build_cpp.hxml
--cmd echo "  │ ├── cs"
--cmd haxe build_cs.hxml
--cmd echo "  │ ├── java"
--cmd haxe build_java.hxml
 
-# Exception in thread "main" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.
-# -cmd echo "  │ ├── jvm"
-# -cmd haxe build_jvm.hxml
--cmd echo "  │ ├── interp (Eval)"
--cmd haxe build_interp.hxml
+
+
+
 
 -cmd echo "  └── Finished building targets"

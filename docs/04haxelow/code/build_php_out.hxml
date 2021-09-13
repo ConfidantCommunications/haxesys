@@ -1,6 +1,6 @@
-
 # I use this file to export to one specific folder, this way I don't have to update my settings for every examle
 
+-lib haxelow
 -cp src
 -main Main
 -php ../../../php

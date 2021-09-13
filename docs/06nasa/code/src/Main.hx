@@ -7,7 +7,7 @@ import haxe.Http;
  */
 class Main {
 	function new() {
-		trace('https api call example NASA');
+		// trace('https api call example NASA');
 		// https is not implemented in all system languages, in this case C# and Python
 		getUrl('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${getCurrentDate()}', false);
 	}
@@ -36,7 +36,7 @@ class Main {
 	}
 
 	function showImage(data:NasaData) {
-		trace('<img src="${data.hdurl}" alt="${data.title}">');
+		trace('<img src="${data.hdurl}" alt="${data.title}" />');
 	}
 
 	function getCurrentDate():String {
