@@ -6,7 +6,7 @@ class Main {
 	private var json:Dynamic;
 
 	public function new() {
-		trace ("json example");
+		trace("json example");
 
 		var path = Path.normalize(Sys.getCwd().split('bin/')[0] + '/assets/users.json');
 		// trace(path);
