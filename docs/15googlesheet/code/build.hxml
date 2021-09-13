@@ -1,21 +1,5 @@
 -cmd echo "  ├─┬ Start building targets"
 
-# returns json instead csv
--cmd echo "  │ ├── node"
--cmd haxe build_node.hxml
-
-# Google sheet example
-# error: SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1129)')
-# -cmd echo "  │ ├── python"
-# -cmd haxe build_python.hxml
-
-# runtime error:
-#  Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
-# -cmd echo "  │ ├── lua"
-# -cmd haxe build_lua.hxml
-
--cmd echo "  │ ├── neko"
--cmd haxe build_neko.hxml
 -cmd echo "  │ ├── cpp"
 -cmd haxe build_cpp.hxml
 
@@ -24,11 +8,35 @@
 # -cmd echo "  │ ├── cs"
 # -cmd haxe build_cs.hxml
 
--cmd echo "  │ ├── java"
--cmd haxe build_java.hxml
--cmd echo "  │ ├── jvm"
--cmd haxe build_jvm.hxml
+# -cmd echo "  │ ├── hl"
+# -cmd haxe build_hl.hxml
+
 -cmd echo "  │ ├── interp (Eval)"
 -cmd haxe build_interp.hxml
+-cmd echo "  │ ├── java"
+-cmd haxe build_java.hxml
+
+# runtime error:
+#  Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
+# -cmd echo "  │ ├── lua"
+# -cmd haxe build_lua.hxml
+
+-cmd echo "  │ ├── jvm"
+-cmd haxe build_jvm.hxml
+-cmd echo "  │ ├── neko"
+-cmd haxe build_neko.hxml
+
+# returns json instead csv
+# -cmd echo "  │ ├── node"
+# -cmd haxe build_node.hxml
+
+# error: ErrorException: stream_socket_client(): SSL operation failed with code 1.
+# -cmd echo "  │ ├── php"
+# -cmd haxe build_php.hxml
+
+# error: SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1129)')
+# -cmd echo "  │ ├── python"
+# -cmd haxe build_python.hxml
+
 
 -cmd echo "  └── Finished building targets"
