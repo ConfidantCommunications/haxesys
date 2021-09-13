@@ -76,6 +76,7 @@ And have individual build files for the different targets:
 - build_lua.hxml
 - build_neko.hxml
 - build_node.hxml
+- build_php.hxml
 - build_python.hxml
 
 To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/00helloworld/code/build.hxml) to build all other build files.
