@@ -117,6 +117,27 @@ For Windows/Linux I would advice you follow the instructions:
 - [Lua website](https://www.lua.org/start.html#installing)
 - [Luarocks](https://github.com/luarocks/luarocks/wiki/Download)
 
+### Lua JSON
+
+Almost all webbased communication is done via json.
+
+For lua you need to install an extra library.
+
+Make sure you have hx-lua-simdjson install: https://luarocks.org/modules/jdonaldson/hx-lua-simdjson
+
+You can use luarocks for this (if you have lua install you already have that )
+
+```bash
+luarocks install hx-lua-simdjson
+```
+
+If you forget to install this lib, you will run into this error when compiling;
+
+```
+lua: main.lua:214: module 'hxsimdjson' not found:
+```
+
+
 <a name="ide"></a>
 
 ## Code Editors

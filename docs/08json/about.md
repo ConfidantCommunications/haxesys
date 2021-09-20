@@ -2,7 +2,7 @@
 
 A very common way of loading data in your web-app is the use of `json` files.
 
-Haxe can handle [json](http://api.haxe.org/haxe/Json.html) cross-platform 
+Haxe can handle [json](http://api.haxe.org/haxe/Json.html) cross-platform
 
 > Crossplatform JSON API : it will automatically use the optimized native API if available.
 > Use `-D haxeJSON` to force usage of the Haxe implementation even if a native API is found. This will provide extra encoding features such as enums (replaced by their index) and StringMaps.
@@ -34,18 +34,32 @@ JSON values can be:
 * A null
 
 
-```
+```json
 {
 	"number" : 0,
 	"string" : "foobar",
 	"bool" : true,
 	"array" : ["one","two"],
 	"object" : {
-		"firstName":"John", 
+		"firstName":"John",
 		"lastName":"Doe"
 	},
 	"null" : null
 }
+```
 
+## Lua
 
+Make sure you have hx-lua-simdjson install: https://luarocks.org/modules/jdonaldson/hx-lua-simdjson
+
+You can use luarocks for this (if you have lua install you already have that )
+
+```bash
+luarocks install hx-lua-simdjson
+```
+
+If you forget to install this lib, you will run into this error when compiling;
+
+```
+lua: main.lua:214: module 'hxsimdjson' not found:
 ```

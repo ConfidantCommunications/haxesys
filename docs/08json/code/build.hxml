@@ -12,8 +12,9 @@
 -cmd haxe build_java.hxml
 
 # lua: main.lua:214: module 'hxsimdjson' not found:
-# -cmd echo "  │ ├── lua"
-# -cmd haxe build_lua.hxml
+# make sure to install `luarocks install hx-lua-simdjson`
+-cmd echo "  │ ├── lua"
+-cmd haxe build_lua.hxml
 
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml

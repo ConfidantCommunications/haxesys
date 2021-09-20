@@ -13,6 +13,7 @@
 -cmd haxe build_java.hxml
 
 # lua: main.lua:231: module 'hxsimdjson' not found:
+# src/Main.hx:29: error: main.lua:2450: attempt to perform arithmetic on a nil value
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
