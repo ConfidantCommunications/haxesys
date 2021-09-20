@@ -7,6 +7,16 @@ Check the [code folder](https://github.com/MatthijsKamstra/haxesys/tree/master/d
 
 In this example we are going to read and use a `.json` file.
 
+## Lua json support
+
+All the targets support json "out-of-the-box".
+
+The only target that needs an extra library is Lua (you only need to install this once):
+
+```bash
+luarocks install hx-lua-simdjson
+```
+
 ## How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.
