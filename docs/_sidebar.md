@@ -42,8 +42,11 @@
 - [Example ORM](18orm/example.md)
   - [More info](18orm/about.md)
   - [Install](18orm/install.md)
+- [Example untyped](19untyped/example.md)
 - [Example hxml](20build/example.md)
   - [More info](20build/about.md)
+- [Example log](22log/example.md)
+  - [More info](22log/about.md)
 - Resources
   - [Who to follow](resources/follow.md)
   - [More like this](resources/more.md)
