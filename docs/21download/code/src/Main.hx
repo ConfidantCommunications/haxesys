@@ -1,5 +1,6 @@
 package;
 
+import haxe.io.Encoding;
 import haxe.io.Bytes;
 import sys.io.FileOutput;
 import sys.io.File;
@@ -14,7 +15,7 @@ class Main {
 
 		req.onData = function(data:String) {
 			try {
-				// trace(data);
+				trace(data.length); // 259052
 				trace('image loaded');
 				var bytes = Bytes.ofString(data);
 				// var bytes = haxe.Resource.getBytes('icon');
@@ -22,6 +23,8 @@ class Main {
 				fo.write(bytes);
 				fo.close();
 				trace('image saved');
+				File.saveBytes('test2.png', bytes);
+				trace('image2 saved');
 			} catch (e:Dynamic) {
 				trace(e);
 			}
