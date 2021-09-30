@@ -47,6 +47,8 @@
   - [More info](20build/about.md)
 - [Example log](22log/example.md)
   - [More info](22log/about.md)
+- [Example trace](23trace/example.md)
+  - [More info](23trace/about.md)
 - Resources
   - [Who to follow](resources/follow.md)
   - [More like this](resources/more.md)
