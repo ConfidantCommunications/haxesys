@@ -12,7 +12,7 @@ class Main {
 
 	inline function log(v:Dynamic) {
 		// Sys.println('> ' + v);
-		Sys.println('${BLUE}> ${RED_BOLD}${v} ${CYAN_BACKGROUND}-----${RESET}');
+		Sys.println('${BLUE}→ ${RED_BOLD}${v} ${CYAN_BACKGROUND}-----${RESET}');
 	}
 
 	static public function main() {
