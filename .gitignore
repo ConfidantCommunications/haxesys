@@ -6,20 +6,17 @@ build.md
 _test
 
 # ignore out and bin folder
-docs/00helloworld/code/out
-docs/00helloworld/code/bin
-docs/05externs/code/bin/out
-docs/10markdown/code/www
-docs/10markdown/code/docs
-docs/11resume/code/docs
 docs/*/code/out
 docs/*/*/code/out
 docs/*/code/bin
 docs/*/*/code/bin
+docs/*/code/docs
+docs/*/*/code/docs
+
 # will be downloaded via curl
 docs/*/code/sqlite-jdbc-3.36.0.3.jar
 docs/*/code/sqlite-jdbc.jar
 
-php
+docs/__errors/*
 
-docs/18orm/code/sqlite-jdbc.jar
+php
