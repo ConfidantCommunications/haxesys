@@ -4,6 +4,8 @@ how to log info, use colors
 
 make logging fun again
 
+![](code/screenshot.png)
+
 #### resources
 
 - https://en.wikipedia.org/wiki/ANSI_escape_code
