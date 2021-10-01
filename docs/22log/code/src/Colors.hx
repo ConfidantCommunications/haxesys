@@ -12,6 +12,7 @@ class Colors {
 	public static final MAGENTA = "\033[0;35m"; // MAGENTA
 	public static final CYAN = "\033[0;36m"; // CYAN
 	public static final WHITE = "\033[0;37m"; // WHITE
+	// public static final GRAY = "\033[0;3243m"; // GRAY
 	// =  Bold
 	public static final BLACK_BOLD = "\033[1;30m"; // BLACK
 	public static final RED_BOLD = "\033[1;31m"; // RED
