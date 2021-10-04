@@ -142,4 +142,32 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 19untyped/code"
 
+
+# 20build
+-cmd cd ../../
+-cmd cd 20build/code/
+--next
+build.hxml
+-cmd echo "│ ├── 20build/code"
+
+# 22log
+-cmd cd ../../
+-cmd cd 22log/code/
+--next
+build.hxml
+-cmd echo "│ ├── 22log/code"
+
+# 23trace
+-cmd cd ../../
+-cmd cd 23trace/code/
+--next
+build.hxml
+-cmd echo "│ ├── 23trace/code"
+
+
+
+
+
+
+
 -cmd echo "└── Finished Haxe build"
