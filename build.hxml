@@ -142,7 +142,6 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 19untyped/code"
 
-
 # 20build
 -cmd cd ../../
 -cmd cd 20build/code/
@@ -163,6 +162,13 @@ build.hxml
 --next
 build.hxml
 -cmd echo "│ ├── 23trace/code"
+
+# 24folder
+-cmd cd ../../
+-cmd cd 24folder/code/
+--next
+build.hxml
+-cmd echo "│ ├── 24folder/code"
 
 
 
