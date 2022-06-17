@@ -37,6 +37,6 @@
   },
   "homepage": "https://github.com/MatthijsKamstra/haxesys#readme",
   "dependencies": {
-    "docsify-cli": "^4.4.3"
+    "docsify-cli": "^4.4.4"
   }
 }
