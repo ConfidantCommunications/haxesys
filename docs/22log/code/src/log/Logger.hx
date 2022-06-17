@@ -1,6 +1,6 @@
 package log;
 
-import Colors.*;
+import log.Colors.*;
 
 /**
  *
@@ -18,7 +18,6 @@ import Colors.*;
  *		info("this is a info message");
  */
 class Logger {
-
 	/**
 	 * @example		log.Logger.setup();
 	 */
@@ -34,9 +33,11 @@ class Logger {
 		// Sys.println('> ' + v);
 		Sys.println('${BLUE}→ ${WHITE}${v}${RESET}');
 	}
+
 	public static inline function info(v:Dynamic) {
 		Sys.println('${BLUE}♥ ${GREEN}${v}${RESET}');
 	}
+
 	public static inline function warn(v:Dynamic) {
 		Sys.println('${BLUE}⚠ ${BLACK}${RED_BACKGROUND}${v}${RESET}');
 	}

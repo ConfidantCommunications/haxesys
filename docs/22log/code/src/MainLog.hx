@@ -1,6 +1,6 @@
 package;
 
-import Colors.*;
+import log.Colors.*;
 
 class MainLog {
 	function new() {
