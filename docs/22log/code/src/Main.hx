@@ -1,6 +1,6 @@
 package;
 
-import Logger.*;
+import log.Logger.*;
 
 // https://en.wikipedia.org/wiki/ANSI_escape_code
 // https://github.com/haxiomic/console.hx/blob/master/Console.hx

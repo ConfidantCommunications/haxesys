@@ -1,4 +1,4 @@
-package;
+package log;
 
 class Colors {
 	// =  Color end string, color reset
