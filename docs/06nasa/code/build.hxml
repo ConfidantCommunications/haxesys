@@ -16,11 +16,13 @@
 -cmd echo "  │ ├── java"
 -cmd haxe build_java.hxml
 
+# FIXME
 # lua: main.lua:214: module 'hxsimdjson' not found:
 # make sure to install `luarocks install hx-lua-simdjson`
 #  Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
--cmd echo "  │ ├── lua"
--cmd haxe build_lua.hxml
+# lua: main.lua:233: module 'socket' not found:
+# -cmd echo "  │ ├── lua"
+# -cmd haxe build_lua.hxml
 
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml

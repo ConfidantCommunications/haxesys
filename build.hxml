@@ -171,6 +171,14 @@ build.hxml
 -cmd echo "│ ├── 24folder/code"
 
 
+# 25haxeversion
+-cmd cd ../../
+-cmd cd 25haxeversion/code/
+--next
+build.hxml
+-cmd echo "│ ├── 25haxeversion/code"
+
+
 
 
 

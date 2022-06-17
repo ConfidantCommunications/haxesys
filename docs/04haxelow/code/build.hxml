@@ -16,6 +16,7 @@
 -cmd echo "  │ ├── lua"
 -cmd haxe build_lua.hxml
 
+# FIXME
 # Exception in thread "main" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.
 # -cmd echo "  │ ├── jvm"
 # -cmd haxe build_jvm.hxml
@@ -23,16 +24,20 @@
 -cmd echo "  │ ├── neko"
 -cmd haxe build_neko.hxml
 
+# FIXME
 # For Node.js: Define -D nodejs or use -lib hxnodejs. The npm packages steno and graceful-fs are required.
 # so I decided it would be become to complex te explain for this documentation
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 
+# FIXME
 # Fatal error: Uncaught ErrorException: Undefined property:
 # -cmd echo "  │ ├── php"
 # -cmd haxe build_php.hxml
--cmd echo "  │ ├── python"
--cmd haxe build_python.hxml
+
+# FIXME
+# -cmd echo "  │ ├── python"
+# -cmd haxe build_python.hxml
 
 
 
