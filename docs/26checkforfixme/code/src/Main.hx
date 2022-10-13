@@ -46,6 +46,8 @@ class Main {
 					if (lang == '(Eval)')
 						lang = 'interp (Eval)';
 					log('--- ' + lang);
+					// log('haxe ${path.replace('.hxml', '_${lang}.hxml')}');
+					// log('haxe ${path.replace('.hxml', '_${lang}.hxml').replace('/','.')}');
 				}
 			}
 		}
