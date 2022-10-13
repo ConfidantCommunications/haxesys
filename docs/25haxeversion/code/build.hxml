@@ -23,7 +23,6 @@
 -cmd echo "  │ ├── neko"
 -cmd haxe build_neko.hxml
 
-# FIXME
 # ReferenceError: sys is not defined
 -cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
