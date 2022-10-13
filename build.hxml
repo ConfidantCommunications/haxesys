@@ -165,8 +165,7 @@ build.hxml
 
 # 24folder
 -cmd cd ../../
--cmd cd 24
-folder/code/
+-cmd cd 24folder/code/
 --next
 -cmd echo "│ ├── 24folder/code"
 build.hxml
