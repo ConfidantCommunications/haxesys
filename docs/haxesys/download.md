@@ -18,7 +18,7 @@ And a [code editor](#ide) will be useful!
 
 Current Haxe version is (at the time of writing):
 
-- **Haxe** v4.2.3
+- **Haxe** v4.2.5
 
 But if the version numbers changed, it means I haven't updated this part of the document in some time :D
 
@@ -42,31 +42,31 @@ haxelib install hxcs
 
 Source: <https://haxe.org/manual/target-cs-getting-started.html>
 
+<a name="mono"></a>
+
+## Mono
+
+Fix for OSX:
+
+```bash
+brew install mono
+```
+
+> Perhaps needs to be installed as well? Could be installed with Unity?
+
+> Install the latest <a href="https://www.mono-project.com/download/stable/">Mono Compiler</a> <br/>
+
 <a name="cs"></a>
 
 ## Download .NET development framework
 
-Not sure you need to do this
+Not sure you need to do this when your on OSX device
 
 "C# compiler not found. Please make sure either Visual Studio or mono is installed or they are reachable by their path"
 
 - Get your version here: <https://dotnet.microsoft.com/>
 
 Press that big "Get started"-button and you will get instructions how to proceed on your platform.
-
-<a name="mono"></a>
-
-## Mono
-
-For osx:
-
-```bash
-brew install mono
-```
-
-Perhaps needs to be installed as well? Could be installed with Unity?
-
-Install the latest <a href="https://www.mono-project.com/download/stable/">Mono Compiler</a> <br/>
 
 <a name="lua"></a>
 
@@ -94,7 +94,7 @@ luarocks install luautf8
 
 _important to know which version you installed_
 
-```
+```bash
 lua -v
 ```
 
@@ -102,13 +102,13 @@ lua -v
 
 On Lua 5.1, install the bitops library:
 
-```
+```bash
 luarocks install luabitop
 ```
 
 On Lua 5.3, install the bit32 library instead:
 
-```
+```bash
 luarocks install bit32
 ```
 
@@ -136,7 +136,6 @@ If you forget to install this lib, you will run into this error when compiling;
 ```
 lua: main.lua:214: module 'hxsimdjson' not found:
 ```
-
 
 <a name="ide"></a>
 

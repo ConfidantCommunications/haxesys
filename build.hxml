@@ -19,50 +19,50 @@ build.hxml
 -cmd cd ../../
 -cmd cd 01writing/code/
 --next
-build.hxml
 -cmd echo "│ ├── 01writing_haxe/code"
+build.hxml
 
 # reading file
 -cmd cd ../../
 -cmd cd 02reading/code/
 --next
-build.hxml
 -cmd echo "│ ├── 02reading_haxe/code"
+build.hxml
 
 # append file
 -cmd cd ../../
 -cmd cd 03append/code/
 --next
-build.hxml
 -cmd echo "│ ├── 03append_haxe/code"
+build.hxml
 
 # local json database
 -cmd cd ../../
 -cmd cd 04haxelow/code/
 --next
-build.hxml
 -cmd echo "│ ├── 04haxelow/code"
+build.hxml
 
 # https nasa api call
 -cmd cd ../../
 -cmd cd 06nasa/code/
 --next
-build.hxml
 -cmd echo "│ ├── 06nasa/code"
+build.hxml
 
 # http quote api call
 -cmd cd ../../
 -cmd cd 06quote/code/
 --next
-build.hxml
 -cmd echo "│ ├── 06quote/code"
+build.hxml
 
 # use json
 -cmd cd ../../
 -cmd cd 08json/code/
 --next
-build.hxml
 -cmd echo "│ ├── 08json/code"
+build.hxml
 
 # sockets
 -cmd cd ../../
@@ -76,107 +76,108 @@ build.hxml
 -cmd cd ../../
 -cmd cd 10markdown/code/
 --next
-build.hxml
 -cmd echo "│ ├── 10markdown/code"
+build.hxml
 
 # 11resume
 -cmd cd ../../
 -cmd cd 11resume/code/
 --next
-build.hxml
 -cmd echo "│ ├── 11resume/code"
+build.hxml
 
 # 12cli
 -cmd cd ../../
 -cmd cd 12cli/code/
 --next
-build.hxml
 -cmd echo "│ ├── 12cli/code"
+build.hxml
 
 # 13terminal
 -cmd cd ../../
 -cmd cd 13terminal/code/
 --next
-build.hxml
 -cmd echo "│ ├── 13terminal/code"
+build.hxml
 
 # 14cli_progress
 -cmd cd ../../
 -cmd cd 14cli_progress/code/
 --next
-build.hxml
 -cmd echo "│ ├── 14cli_progress/code"
+build.hxml
 
 # 15googlesheet
 -cmd cd ../../
 -cmd cd 15googlesheet/code/
 --next
-build.hxml
 -cmd echo "│ ├── 15googlesheet/code"
+build.hxml
 
 # 16flatfile
 -cmd cd ../../
 -cmd cd 16flatfile/code/
 --next
-build.hxml
 -cmd echo "│ ├── 16flatfile/code"
+build.hxml
 
 # 17sqlite
 -cmd cd ../../
 -cmd cd 17sqlite/code/
 --next
-build.hxml
 -cmd echo "│ ├── 17sqlite/code"
+build.hxml
 
 # 18orm
 -cmd cd ../../
 -cmd cd 18orm/code/
 --next
-build.hxml
 -cmd echo "│ ├── 18orm/code"
+build.hxml
 
 # 19untyped
 -cmd cd ../../
 -cmd cd 19untyped/code/
 --next
-build.hxml
 -cmd echo "│ ├── 19untyped/code"
+build.hxml
 
 # 20build
 -cmd cd ../../
 -cmd cd 20build/code/
 --next
-build.hxml
 -cmd echo "│ ├── 20build/code"
+build.hxml
 
 # 22log
 -cmd cd ../../
 -cmd cd 22log/code/
 --next
-build.hxml
 -cmd echo "│ ├── 22log/code"
+build.hxml
 
 # 23trace
 -cmd cd ../../
 -cmd cd 23trace/code/
 --next
-build.hxml
 -cmd echo "│ ├── 23trace/code"
+build.hxml
 
 # 24folder
 -cmd cd ../../
--cmd cd 24folder/code/
+-cmd cd 24
+folder/code/
 --next
-build.hxml
 -cmd echo "│ ├── 24folder/code"
+build.hxml
 
 
 # 25haxeversion
 -cmd cd ../../
 -cmd cd 25haxeversion/code/
 --next
-build.hxml
 -cmd echo "│ ├── 25haxeversion/code"
+build.hxml
 
 
 

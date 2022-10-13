@@ -8,19 +8,25 @@
 # -cmd haxe build_hl.hxml
 
 # Uncaught exception Null Access
+-cmd echo "  │ ├── interp (Eval) FIXME"
 # -cmd echo "  │ ├── interp (Eval)"
 # -cmd haxe build_interp.hxml
 
 -cmd echo "  │ ├── java"
 -cmd haxe build_java.hxml
--cmd echo "  │ ├── lua"
--cmd haxe build_lua.hxml
+
+# lua: main.lua:199: module 'rex_pcre' not found:
+-cmd echo "  │ ├── lua FIXME"
+# -cmd echo "  │ ├── lua"
+# -cmd haxe build_lua.hxml
+
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
 -cmd echo "  │ ├── neko"
 -cmd haxe build_neko.hxml
 
 # ReferenceError: sys is not defined
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 

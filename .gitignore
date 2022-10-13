@@ -17,6 +17,7 @@ docs/*/*/code/docs
 docs/*/code/sqlite-jdbc-3.36.0.3.jar
 docs/*/code/sqlite-jdbc.jar
 
+# more to ignore
 docs/__errors/*
-
+docs/_error_install/*
 php

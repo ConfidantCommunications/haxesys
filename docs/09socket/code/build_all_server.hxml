@@ -2,12 +2,14 @@
 
 
 -cmd echo "  │ ├── node [FIXME] sys.net.Socket has no field bind"
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node_server.hxml
 
 -cmd echo "  │ ├── python"
 -cmd haxe build_python_server.hxml
 
+-cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua_server.hxml
 

@@ -2,6 +2,7 @@
 
 # Error: Could not process argument Error: Cannot find module 'deasync'
 -cmd echo "  │ ├── node [FIXME] need to install deasync"
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node_client.hxml
 

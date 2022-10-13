@@ -8,17 +8,23 @@
 -cmd echo "  │ ├── cs"
 -cmd haxe build_cs.hxml
 # -cmd echo "  │ ├── hl"
+-cmd echo "  │ ├── hl FIXME"
 # -cmd haxe build_hl.hxml
 -cmd echo "  │ ├── interp (Eval)"
 -cmd haxe build_interp.hxml
 -cmd echo "  │ ├── java"
 -cmd haxe build_java.hxml
--cmd echo "  │ ├── lua"
--cmd haxe build_lua.hxml
+
+# lua: main.lua:198: module 'rex_pcre' not found:
+-cmd echo "  │ ├── lua FIXME"
+# -cmd echo "  │ ├── lua"
+-cmd echo "  │ ├── lua FIXME"
+# -cmd haxe build_lua.hxml
 
 # FIXME
 # Exception in thread "main" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.
 # -cmd echo "  │ ├── jvm"
+-cmd echo "  │ ├── jvm FIXME"
 # -cmd haxe build_jvm.hxml
 
 -cmd echo "  │ ├── neko"
@@ -27,16 +33,20 @@
 # FIXME
 # For Node.js: Define -D nodejs or use -lib hxnodejs. The npm packages steno and graceful-fs are required.
 # so I decided it would be become to complex te explain for this documentation
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 
 # FIXME
 # Fatal error: Uncaught ErrorException: Undefined property:
 # -cmd echo "  │ ├── php"
+-cmd echo "  │ ├── php FIXME"
 # -cmd haxe build_php.hxml
 
 # FIXME
+-cmd echo "  │ ├── python FIXME"
 # -cmd echo "  │ ├── python"
+-cmd echo "  │ ├── python FIXME"
 # -cmd haxe build_python.hxml
 
 

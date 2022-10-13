@@ -8,6 +8,8 @@
 # -cmd haxe build_hl.hxml
 
 # Uncaught exception Null Access
+-cmd echo "  │ ├── interp (Eval) FIXME"
+-cmd echo "  │ ├── interp (Eval) FIXME"
 # -cmd echo "  │ ├── interp (Eval)"
 # -cmd haxe build_interp.hxml
 
@@ -16,8 +18,11 @@
 
 # lua: main.lua:214: module 'hxsimdjson' not found:
 # make sure to install `luarocks install hx-lua-simdjson`
--cmd echo "  │ ├── lua"
--cmd haxe build_lua.hxml
+# lua: main.lua:199: module 'rex_pcre' not found:
+-cmd echo "  │ ├── lua FIXME"
+-cmd echo "  │ ├── lua FIXME"
+# -cmd echo "  │ ├── lua"
+# -cmd haxe build_lua.hxml
 
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml

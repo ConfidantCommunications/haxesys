@@ -19,6 +19,77 @@ But Haxe has more system targets, that probably work exactly the same:
 - hl (hashlink)
 - php
 
+## Haxe libs
+
+Read [download](docs/haxesys/download.md)
+
+Read https://haxe.org/documentation/introduction/ - Setup your development environment
+
+Here quick and dirty version
+
+```bash
+haxelib install hxcpp
+haxelib install hxcs
+haxelib install hxjava
+```
+
+#### Haxe C#
+
+```
+Compilation error
+C# compiler not found. Please make sure either Visual Studio or mono is installed or they are reachable by their path
+```
+
+osx
+
+```bash
+brew install mono
+```
+
+#### Haxe Java
+
+https://haxe.org/documentation/platforms/java.html
+
+```bash
+Compilation error
+Java compiler not found. Please make sure JDK is installed. If it is, please add an environment variable called JAVA_HOME that points to the JDK install location or add the bin subfolder to your PATH environment.
+```
+
+OSX
+
+> Install the latest Java Runtime Environment (JRE).
+
+```bash
+java -showversion
+# The operation couldn’t be completed. Unable to locate a Java Runtime.
+# Please visit http://www.java.com for information on installing Java.
+brew install java
+# follow instructions to "For the system Java wrappers to find this JDK, symlink it with"
+#  ...
+# check version
+java -showversion
+```
+
+#### LUA
+
+```
+brew install lua
+brew install luarocks
+brew install cmake
+```
+
+And use `luarocks` to install dependency :
+
+```bash
+luarocks install lrexlib-pcre
+luarocks install environ
+luarocks install luasocket
+luarocks install luv
+luarocks install luautf8
+luarocks install bit32 # depends on the version you install
+luarocks install hx-lua-simdjson # when you want to work with json
+```
+
 #### Visit [http://matthijskamstra.github.io/haxesys/](http://matthijskamstra.github.io/haxesys/)
 
 ## How to contribute?

@@ -11,6 +11,7 @@
 # src/Main.hx:11: characters 12-52 : Called from here
 # src/Main.hx:71: characters 13-23 : Called from here
 # Error: Command failed with error 1
+-cmd echo "  │ ├── interp (Eval) FIXME"
 # -cmd echo "  │ ├── interp (Eval)"
 # -cmd haxe build_interp.hxml
 

@@ -6,6 +6,7 @@
 -cmd haxe build_cpp.hxml
 
 # not implemented
+-cmd echo "  │ ├── cs FIXME"
 # -cmd echo "  │ ├── cs"
 # -cmd haxe build_cs.hxml
 
@@ -21,6 +22,7 @@
 # make sure to install `luarocks install hx-lua-simdjson`
 #  Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
 # lua: main.lua:233: module 'socket' not found:
+-cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
@@ -32,6 +34,7 @@
 # src/Main.hx:10: https api call example NASA
 # src/Main.hx:32: status: 403
 # src/Main.hx:28: error: Http Error #403
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 

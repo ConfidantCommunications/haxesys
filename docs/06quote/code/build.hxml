@@ -14,6 +14,7 @@
 
 # lua: main.lua:231: module 'hxsimdjson' not found:
 # src/Main.hx:29: error: main.lua:2450: attempt to perform arithmetic on a nil value
+-cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
@@ -23,6 +24,7 @@
 -cmd haxe build_neko.hxml
 
 # src/Main.hx:20: Error: wrong method.
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 

@@ -5,6 +5,7 @@
 
 # Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
 # [ERROR] FATAL UNHANDLED EXCEPTION: Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
+-cmd echo "  │ ├── cs FIXME"
 # -cmd echo "  │ ├── cs"
 # -cmd haxe build_cs.hxml
 
@@ -18,6 +19,7 @@
 
 # runtime error:
 #  Https support in haxe.Http is not implemented for this target in sys.Http.customRequest at sys/Http.hx:112
+-cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
@@ -27,6 +29,7 @@
 -cmd haxe build_neko.hxml
 
 # returns json instead csv
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 
@@ -35,6 +38,7 @@
 # -cmd haxe build_php.hxml
 
 # error: SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1129)')
+-cmd echo "  │ ├── python FIXME"
 # -cmd echo "  │ ├── python"
 # -cmd haxe build_python.hxml
 

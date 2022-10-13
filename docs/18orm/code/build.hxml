@@ -8,11 +8,13 @@
 
 # (java) You will need a SQLite JDBC driver (e.g. https://bitbucket.org/xerial/sqlite-jdbc).
 
-
--cmd echo "  │ ├── cpp"
--cmd haxe build_cpp.hxml
+# Error: Error: Cannot process [record-macros]: Library record-macros is not installed : run 'haxelib install record-macros'
+-cmd echo "  │ ├── cpp FIXME"
+# -cmd echo "  │ ├── cpp"
+# -cmd haxe build_cpp.hxml
 
 # (cs) You will need a SQLite ADO.NET Provider (see http://www.mono-project.com/docs/database-access/providers/sqlite/). Also note that this will try to open an assembly named Mono.Data.Sqlite if it wasn't loaded yet.
+-cmd echo "  │ ├── cs FIXME"
 # -cmd echo "  │ ├── cs"
 # -cmd haxe build_cs.hxml
 
@@ -20,29 +22,39 @@
 # -cmd haxe build_hl.hxml
 
 # Not implemented for this platform
+-cmd echo "  │ ├── interp (Eval) FIXME"
 # -cmd echo "  │ ├── interp (Eval)"
 # -cmd haxe build_interp.hxml
 
 # (java) You will need a SQLite JDBC driver (e.g. https://bitbucket.org/xerial/sqlite-jdbc).
--cmd echo "  │ ├── java"
--cmd haxe build_java.hxml
+-cmd echo "  │ ├── java FIXME"
+# -cmd echo "  │ ├── java"
+# -cmd haxe build_java.hxml
 
+-cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
 
 # (java) You will need a SQLite JDBC driver (e.g. https://bitbucket.org/xerial/sqlite-jdbc).
--cmd echo "  │ ├── jvm"
--cmd haxe build_jvm.hxml
--cmd echo "  │ ├── neko"
--cmd haxe build_neko.hxml
+-cmd echo "  │ ├── jvm FIXME"
+# -cmd echo "  │ ├── jvm"
+# -cmd haxe build_jvm.hxml
+
+
+-cmd echo "  │ ├── neko FIXME"
+# -cmd echo "  │ ├── neko"
+# -cmd haxe build_neko.hxml
 
 # Not implemented for this platform
+-cmd echo "  │ ├── node FIXME"
 # -cmd echo "  │ ├── node"
 # -cmd haxe build_node.hxml
 
--cmd echo "  │ ├── php"
--cmd haxe build_php.hxml
+-cmd echo "  │ ├── php FIXME"
+# -cmd echo "  │ ├── php"
+# -cmd haxe build_php.hxml
 
+-cmd echo "  │ ├── python FIXME"
 # -cmd echo "  │ ├── python"
 # -cmd haxe build_python.hxml
 
