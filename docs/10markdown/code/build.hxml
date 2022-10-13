@@ -4,6 +4,7 @@
 -cmd haxe build_cpp.hxml
 -cmd echo "  │ ├── cs"
 -cmd haxe build_cs.hxml
+
 # -cmd echo "  │ ├── hl"
 # -cmd haxe build_hl.hxml
 
@@ -13,16 +14,16 @@
 # Error: Command failed with error 1
 -cmd echo "  │ ├── interp (Eval) FIXME"
 # -cmd echo "  │ ├── interp (Eval)"
--cmd echo "  │ ├── interp (Eval) FIXME"
 # -cmd haxe build_interp.hxml
 
 -cmd echo "  │ ├── java"
 -cmd haxe build_java.hxml
+
 # lua: main.lua:199: module 'rex_pcre' not found:
--cmd echo "  │ ├── lua FIXME"
 -cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
 # -cmd haxe build_lua.hxml
+
 -cmd echo "  │ ├── jvm"
 -cmd haxe build_jvm.hxml
 -cmd echo "  │ ├── neko"
@@ -33,8 +34,6 @@
 -cmd haxe build_php.hxml
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
-
-
 
 
 -cmd echo "  └── Finished building targets"

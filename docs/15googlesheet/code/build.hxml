@@ -34,6 +34,7 @@
 # -cmd haxe build_node.hxml
 
 # error: ErrorException: stream_socket_client(): SSL operation failed with code 1.
+-cmd echo "  │ ├── php FIXME"
 # -cmd echo "  │ ├── php"
 # -cmd haxe build_php.hxml
 

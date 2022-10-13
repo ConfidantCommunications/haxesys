@@ -7,9 +7,10 @@
 -cmd haxe build_cpp.hxml
 -cmd echo "  │ ├── cs"
 -cmd haxe build_cs.hxml
+
 # -cmd echo "  │ ├── hl"
--cmd echo "  │ ├── hl FIXME"
 # -cmd haxe build_hl.hxml
+
 -cmd echo "  │ ├── interp (Eval)"
 -cmd haxe build_interp.hxml
 -cmd echo "  │ ├── java"
@@ -18,7 +19,6 @@
 # lua: main.lua:198: module 'rex_pcre' not found:
 -cmd echo "  │ ├── lua FIXME"
 # -cmd echo "  │ ├── lua"
--cmd echo "  │ ├── lua FIXME"
 # -cmd haxe build_lua.hxml
 
 # FIXME
@@ -39,18 +39,14 @@
 
 # FIXME
 # Fatal error: Uncaught ErrorException: Undefined property:
-# -cmd echo "  │ ├── php"
 -cmd echo "  │ ├── php FIXME"
+# -cmd echo "  │ ├── php"
 # -cmd haxe build_php.hxml
 
 # FIXME
 -cmd echo "  │ ├── python FIXME"
 # -cmd echo "  │ ├── python"
--cmd echo "  │ ├── python FIXME"
 # -cmd haxe build_python.hxml
-
-
-
 
 
 -cmd echo "  └── Finished building targets"

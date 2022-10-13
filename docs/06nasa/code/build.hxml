@@ -12,6 +12,7 @@
 
 # -cmd echo "  │ ├── hl"
 # -cmd haxe build_hl.hxml
+
 -cmd echo "  │ ├── interp (Eval)"
 -cmd haxe build_interp.hxml
 -cmd echo "  │ ├── java"
@@ -44,8 +45,6 @@
 
 -cmd echo "  │ ├── python"
 -cmd haxe build_python.hxml
-
-
 
 
 -cmd echo "  └── Finished building targets"
