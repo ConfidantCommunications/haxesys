@@ -1,6 +1,10 @@
 # Example
 
-Read a folder and its content
+Read a folder and its content, search for specifics
+
+I use it to generate a view based upon the `FIXME` in the `build.hxml`
+
+This example is based upon the [folder example](../24folder/).
 
 ## How to start
 
@@ -46,7 +50,7 @@ So you could build with one file many backends.
 
 But not every feature works automaticly in all the languages and to prevent it from building I decided to have a little different structure.
 
-Currently I use [`build_interp.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/03append/code/build_interp.hxml) for vscode syntax checking:
+Currently I use [`build_interp.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/26checkforfixme/code/build_interp.hxml) for vscode syntax checking:
 
 ```bash
 -cp src
@@ -68,11 +72,11 @@ And have individual build files for the different targets:
 - build_node.hxml
 - build_python.hxml
 
-To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/03append/code/build.hxml) to build all other build files.
+To build all projects I use [`build.hxml`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/26checkforfixme/code/build.hxml) to build all other build files.
 
 If a specific target doesn't work, I will explain it in this file
 
-Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/03append/code)-folder.
+Check out this structure in the [`code`](https://github.com/MatthijsKamstra/haxesys/tree/master/docs/26checkforfixme/code)-folder.
 
 ## Build all targets with Haxe and start the specific target
 
