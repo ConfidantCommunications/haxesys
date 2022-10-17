@@ -8,14 +8,8 @@
 # -cmd echo "  │ ├── hl"
 # -cmd haxe build_hl.hxml
 
-# Uncaught exception Null Access
-# src/Main.hx:11: characters 12-52 : Called from here
-# src/Main.hx:71: characters 13-23 : Called from here
-# Error: Command failed with error 1
--cmd echo "  │ ├── interp (Eval) FIXME"
-# -cmd echo "  │ ├── interp (Eval)"
-# -cmd haxe build_interp.hxml
-
+-cmd echo "  │ ├── interp (Eval)"
+-cmd haxe build_interp.hxml
 -cmd echo "  │ ├── java"
 -cmd haxe build_java.hxml
 -cmd echo "  │ ├── lua"

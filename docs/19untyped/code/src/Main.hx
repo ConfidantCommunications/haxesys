@@ -8,7 +8,16 @@ class Main {
 	var TARGET:String = ''; // current target (neko, node.js, c++, c#, python, java)
 
 	public function new() {
-		TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
+		// eval uses a different absolute path...
+		// trace(Sys.getCwd());
+		// cs: `/path/to/workingdir_haxe/haxesys/docs/19untyped/code/bin/cs/bin`
+		// eval: `/path/to/workingdir_haxe/haxesys/docs/19untyped/code`
+
+		try {
+			TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
+		} catch (e) {
+			TARGET = 'interp';
+		}
 
 		trace('[${TARGET}] untyped');
 
