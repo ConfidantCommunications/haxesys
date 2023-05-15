@@ -13,7 +13,15 @@ class Main {
 	var TARGET:String; // current target (neko, node.js, c++, c#, python, java)
 
 	public function new(?args:Array<String>) {
-		TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
+
+   		// trace(Sys.getCwd());
+		if(Sys.getCwd().indexOf('bin') != -1){
+			TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
+		} else {
+			// eval?
+			TARGET = 'eval'; // ?
+		}
+
 
 		trace('[${TARGET}] Sys.command() ');
 
