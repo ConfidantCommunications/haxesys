@@ -19,16 +19,14 @@ class Main {
 	var EXPORT:String; // folder to generate files in (in this case `docs` folder from github )
 
 	public function new(?args:Array<String>) {
-		trace(Sys.getCwd());
-		if (Sys.getCwd().indexOf('bin') != -1) {
+		if (Sys.getCwd().indexOf('bin/') != -1) {
 			TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
 			EXPORT = Path.normalize(Sys.getCwd().split('bin/')[0] + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
 			ASSETS = Path.normalize(Sys.getCwd().split('bin/')[0] + '/assets/');
 		} else {
-			// eval?
-			TARGET = 'eval'; // ?
-			EXPORT = Path.normalize(Sys.getCwd() + 'docs/12cli/code/bin' + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
-			ASSETS = Path.normalize(Sys.getCwd() + 'docs/12cli/code/bin' + '/assets/');
+			TARGET = 'eval'; // interp
+			EXPORT = Path.normalize(Sys.getCwd() + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
+			ASSETS = Path.normalize(Sys.getCwd() + '/assets/');
 		}
 
 		Sys.println('[${TARGET}] CLI "hxLoremIpsum" ');
