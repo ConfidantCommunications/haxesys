@@ -18,7 +18,6 @@ class Main {
 	var __arr:Array<String> = [];
 
 	public function new() {
-		trace(Sys.getCwd());
 		if (Sys.getCwd().indexOf('bin/') != -1) {
 			TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
 			EXPORT = Path.normalize(Sys.getCwd().split('bin/')[0] + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
