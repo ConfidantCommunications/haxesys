@@ -19,9 +19,17 @@ class Main {
 	var EXPORT:String; // folder to generate files in (in this case `docs` folder from github )
 
 	public function new(?args:Array<String>) {
-		TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
-		EXPORT = Path.normalize(Sys.getCwd().split('bin/')[0] + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
-		ASSETS = Path.normalize(Sys.getCwd().split('bin/')[0] + '/assets/');
+		trace(Sys.getCwd());
+		if (Sys.getCwd().indexOf('bin') != -1) {
+			TARGET = Sys.getCwd().split('bin/')[1].split('/')[0]; // yep, that works in this folder structure
+			EXPORT = Path.normalize(Sys.getCwd().split('bin/')[0] + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
+			ASSETS = Path.normalize(Sys.getCwd().split('bin/')[0] + '/assets/');
+		} else {
+			// eval?
+			TARGET = 'eval'; // ?
+			EXPORT = Path.normalize(Sys.getCwd() + 'docs/12cli/code/bin' + '/docs/${TARGET}'); // normal situation this would we just the `www` or `docs` folder
+			ASSETS = Path.normalize(Sys.getCwd() + 'docs/12cli/code/bin' + '/assets/');
+		}
 
 		Sys.println('[${TARGET}] CLI "hxLoremIpsum" ');
 
@@ -46,7 +54,7 @@ class Main {
 		}
 	}
 
-	function writeOut(){
+	function writeOut() {
 		var str = '# README\n\n**Generated on:** ${Date.now()}\n**Target:** ${TARGET}';
 		writeFile(Sys.getCwd(), 'README.MD', str);
 	}
@@ -66,7 +74,7 @@ class Main {
 		trace('written file: ${path}/${filename}');
 	}
 
-	function correctCLI(target:String):String{
+	function correctCLI(target:String):String {
 		var str = '';
 		switch (target) {
 			case 'neko':
@@ -83,14 +91,14 @@ class Main {
 				str = 'node main.js';
 			case 'python':
 				str = 'python3 main.py';
-			default :
+			default:
 				str = '[xxx]';
-				trace ("case '"+target+"': trace ('"+target+"');");
+				trace("case '" + target + "': trace ('" + target + "');");
 		}
 		return str;
 	}
 
-	 function showHelp():Void {
+	function showHelp():Void {
 		Sys.println('------------------------------------------------
 hxLoremIpsum ($VERSION)
 
