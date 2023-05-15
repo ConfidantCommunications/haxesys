@@ -148,6 +148,13 @@ build.hxml
 -cmd echo "│ ├── 20build/code"
 build.hxml
 
+# 21download
+-cmd cd ../../
+-cmd cd 21download/code/
+--next
+-cmd echo "│ ├── 21download/code"
+build.hxml
+
 # 22log
 -cmd cd ../../
 -cmd cd 22log/code/
