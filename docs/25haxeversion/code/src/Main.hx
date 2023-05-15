@@ -26,7 +26,7 @@ class Main {
 		sys.io.File.saveContent('haxe_version.txt', str);
 
 		var str:String = Json.stringify({
-			'Haxe': ${out.replace('\n', '')},
+			'Haxe': '${out.replace('\n', '')}',
 			'created_date': Date.now().toString(),
 		}, null, '  ');
 		sys.io.File.saveContent('haxe_version.json', str);
