@@ -2,7 +2,7 @@
 
 > Macro-based ORM (object-relational mapping)
 
-The previous example is a lite databases. We now move over to MySQL, the database mother load.
+The previous example is a lite databases. We now move over to MySQL, the database mother lode.
 
 ## What is MySQL?
 
